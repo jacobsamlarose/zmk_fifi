@@ -14,12 +14,12 @@
 // include <dt-bindings/led/led.h>
 
 /*           36 Keys (Note: for the Fifi, I just ignore the outer columns)
-╭─────────────────╮ ╭─────────────────╮
-│ 0  1  2  3  4  5│ │ 6  7  8  9 10 11│
-│12 13 14 15 16 17│ │18 19 20 21 22 23│
-│24 25 26 27 28 29│ │30 31 32 33 34 35│
-╰────────╮36 37 38│ │39 40 41 ╭───────╯
-         ╰────────╯ ╰─────────╯         */
+╭───────────────╮ ╭───────────────╮
+│ 0  1  2  3  4 │ │ 5  6  7  8  9 │
+│10 11 12 13 14 │ │15 16 17 18 19 │
+│20 21 22 23 24 │ │25 26 27 28 29 │
+╰────╮ 30 31 32 │ │33 34 35 ╭─────╯
+     ╰──────────╯ ╰─────────╯         */
 
 #define BT0 BT_SEL 0
 #define BT1 BT_SEL 1
@@ -53,14 +53,14 @@
 
 	combo_capz {
            timeout-ms = <200>;
-           key-positions = <25 26>;
+           key-positions = <20 21>;
 	   layers = <0>;
            bindings = <&kp LS(Z)>;
          };
 
 	combo_lshft {
            timeout-ms = <200>;
-           key-positions = <3 15>;
+           key-positions = <2 12>;
 	   layers = <0 1 2>;
            bindings = <&sk LSHIFT>;
          };
@@ -307,60 +307,60 @@
                 default_layer {
 
                         bindings = <
-   &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    	&kp I       	&kp O    	&kp P 		&none
-   &none   &kp A    		&kp S    	&ht_hl 1 D     	&hm LGUI F      &kp G          		&kp H   	&kp J    	&kp K       	&kp L    	&kp FSLH  	&none
-   &none   &ht_z LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    	&kp COMMA   	&kp DOT  	&sk RSHFT   	&none
-                                		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&mo 1 		&kp CAPS 
+   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    	&kp I       	&kp O    	&kp P 	
+   &kp A    		&kp S    	&ht_hl 1 D     	&hm LGUI F      &kp G          		&kp H   	&kp J    	&kp K       	&kp L    	&kp FSLH 
+   &ht_z LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    	&kp COMMA   	&kp DOT  	&sk RSHFT
+                                	&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&mo 1 		&kp CAPS 
                         >;
                 };
 
 		nav_layer {
 
                         bindings = <
-   &none   &kp TILDE  		&kp EXCL	&kp AT   	&kp LA(N3)     	&kp LA(MINUS)		&none		&none		&none	        &none		&none   	&none    
-   &none   &kp PIPE		&kp DLLR	&kp PRCNT  	&kp CARET   	&kp LA(EQUAL)		&none 		&kp HOME	&kp UP		&kp END		&none		&none       	
-   &none   &hm LSHIFT GRAVE 	&kp AMPS  	&kp STAR	&kp CAPS	&kp DOT			&none		&kp LEFT    	&kp DOWN	&kp RIGHT	&sk RSHFT	&none
-                                		&trans  	&trans		&trans			&trans   	&trans   	&kp C_EJECT
+   &kp TILDE  		&kp EXCL	&kp AT   	&kp LA(N3)     	&kp LA(MINUS)		&none		&none		&none	        &none		&none
+   &kp PIPE		&kp DLLR	&kp PRCNT  	&kp CARET   	&kp LA(EQUAL)		&none 		&kp HOME	&kp UP		&kp END		&none
+   &hm LSHIFT GRAVE 	&kp AMPS  	&kp STAR	&kp CAPS	&kp DOT			&none		&kp LEFT    	&kp DOWN	&kp RIGHT	&sk RSHFT
+                                	&trans  	&trans		&trans			&trans   	&trans   	&kp C_EJECT
                         >;
                 };
 
 		num_layer {
 
 			bindings = <
-   &none   &kp GRAVE  		&kp N1  	&kp N2  	&kp N3    	&kp MINUS    		&none		&none		&bdel  		&none		&kp ESC   	&none    
-   &none   &kp N0  		&kp N4		&kp N5		&kp N6  	&kp EQUAL  		&mo 5		&kp COLON	&bspc_del  	&kp SQT		&kp BSLH	&none       
-   &none   &kp LSHFT 		&kp N7		&kp N8		&kp N9		&kp PIPE		&mo 4		&kp SEMI	&kp COMMA  	&kp DOT		&kp RSHFT	&none
-                                		&trans  	&trans		&trans			&trans   	&trans  	&caps_word
+   &kp GRAVE  		&kp N1  	&kp N2  	&kp N3    	&kp MINUS    		&none		&none		&bdel  		&none		&kp ESC 
+   &kp N0  		&kp N4		&kp N5		&kp N6  	&kp EQUAL  		&mo 5		&kp COLON	&bspc_del  	&kp SQT		&kp BSLH
+   &kp LSHFT 		&kp N7		&kp N8		&kp N9		&kp PIPE		&mo 4		&kp SEMI	&kp COMMA  	&kp DOT		&kp RSHFT
+                                	&trans  	&trans		&trans			&trans   	&trans  	&caps_word
                         >;
                 };
 		
 		board_layer {
 	
 			bindings = <
-   &none   &bt BT0		&bt BT1	    	&bt BT2  	&bt BT3		&bt BT4			&none 		&none		&none 		&none		&none		&none
-   &none   &none  		&none		&none     	&bt BT_PRV	&bt BT_NXT		&kp F1 		&kp F2   	&kp F3		&kp F4		&kp F5		&none	 
-   &none   &none  		&bt BT_CLR  	&none       	&out OUT_TOG	&none			&kp F6		&kp F7   	&kp F8  	&kp F9		&kp F10		&none	 
-                        			&none	    	&none   	&ext_power EP_TOG  	&trans  	&trans  	&trans
+   &bt BT0		&bt BT1	    	&bt BT2  	&bt BT3		&bt BT4			&none 		&none		&none 		&none		&none
+   &none  		&none		&none     	&bt BT_PRV	&bt BT_NXT		&kp F1 		&kp F2   	&kp F3		&kp F4		&kp F5
+   &none  		&bt BT_CLR  	&none       	&out OUT_TOG	&none			&kp F6		&kp F7   	&kp F8  	&kp F9		&kp F10
+                        		&none	    	&none   	&ext_power EP_TOG  	&trans  	&trans  	&trans
                         >;
                 };
 
 		os_layer {
 
                         bindings = <
-   &none   &none  		&none  		&bt BT_PRV   	&bt BT_NXT   	&macro_switch		&none		&none		&none		&none		&none		&none
-   &none   &kp LG(LS(NUMBER_3)) &kp C_RW  	&kp C_PP	&kp C_FF	&macro_windows		&mo 5 		&kp C_VOL_UP   	&kp C_BRI_UP	&none		&none		&none	 
-   &none   &none  		&none	  	&none		&none		&none			&mo 4		&kp C_VOL_DN   	&kp C_BRI_DN  	&none		&none		&none	 
-                                		&none 		&none 		&none  			&trans  	&trans  	&trans
+   &none  		&none  		&bt BT_PRV   	&bt BT_NXT   	&macro_switch		&none		&none		&none		&none		&none
+   &kp LG(LS(NUMBER_3)) &kp C_RW  	&kp C_PP	&kp C_FF	&macro_windows		&mo 5 		&kp C_VOL_UP   	&kp C_BRI_UP	&none		&none
+   &none  		&none	  	&none		&none		&none			&mo 4		&kp C_VOL_DN   	&kp C_BRI_DN  	&none		&none
+                                	&none 		&none 		&none  			&trans  	&trans  	&trans
                         >;
                 };
 
 		fn_layer {
 
                         bindings = <
-   &none   &kp F1  		&kp F2 		&kp F3   	&kp F4   	&kp F5			&none		&kp PG_UP	&none		&none		&none		&none
-   &none   &kp F6 		&kp F7		&kp F8		&kp F9		&kp F10			&none 		&kp PG_DN   	&none		&none		&none		&none	 
-   &none   &kp F11  		&kp F12   	&none	  	&none		&none			&none		&none   	&none  		&none		&none		&none	 
-                                		&none 		&none 		&none  			&trans  	&trans  	&trans
+   &kp F1  		&kp F2 		&kp F3   	&kp F4   	&kp F5			&none		&kp PG_UP	&none		&none		&none
+   &kp F6 		&kp F7		&kp F8		&kp F9		&kp F10			&none 		&kp PG_DN   	&none		&none		&none
+   &kp F11  		&kp F12   	&none	  	&none		&none			&none		&none   	&none  		&none		&none 
+                                	&none 		&none 		&none  			&trans  	&trans  	&trans
                         >;
                 };
 		

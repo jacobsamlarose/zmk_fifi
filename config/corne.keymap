@@ -79,7 +79,7 @@
 
         combo_mo3 {
             timeout-ms = <300>;
-            key-positions = <39 40 41 33 34 35>;
+            key-positions = <33 34 35>;
             layers = <0 1 2 3 4>;
             bindings = <&mo 3>;
         };
@@ -135,7 +135,7 @@
 
         combo_semi {
             timeout-ms = <30>;
-            key-positions = <17 27 13>;
+            key-positions = <17 27>;
             layers = <0>;
             bindings = <&kp SEMI>;
         };
@@ -150,7 +150,7 @@
         combo_slideover {
             timeout-ms = <30>;
             layers = <0>;
-            key-positions = <2 12>;
+            key-positions = <1 11>;
             bindings = <&macro_slideover>;
         };
 

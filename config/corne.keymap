@@ -3,20 +3,16 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
-#include <behaviors.dtsi>
-
 // include <dt-bindings/zmk/backlight.h>
 
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    chosen {
-        zmk,matrix_transform = &five_column_transform;
-    };
+    chosen { zmk,matrix_transform = &five_column_transform; };
 };
 
 // include <dt-bindings/led/led.h>
@@ -329,10 +325,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W  &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S  &ht_hl 1 D  &hm LGUI F    &kp G            &kp H        &kp J  &kp K      &kp L    &kp FSLH
-&ht_z LSHIFT Z  &kp X  &kp C       &kp V         &kp B            &kp N        &kp M  &kp COMMA  &kp DOT  &sk RSHFT
-                       &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 2 SPACE  &mo 1  &kp CAPS
+&kp Q           &kp W       &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A           &ht_hl 6 S  &ht_hl 1 D  &hm LGUI F    &kp G            &kp H        &kp J  &kp K      &kp L    &kp FSLH
+&ht_z LSHIFT Z  &kp X       &kp C       &kp V         &kp B            &kp N        &kp M  &kp COMMA  &kp DOT  &sk RSHFT
+                            &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 2 SPACE  &mo 1  &kp CAPS
             >;
         };
 
@@ -378,6 +374,15 @@
 &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none   &kp PG_DN  &none   &none  &none
 &kp F11  &kp F12  &none   &none   &none      &none   &none      &none   &none  &none
                   &none   &none   &none      &trans  &trans     &trans
+            >;
+        };
+
+        alt_num_layer {
+            bindings = <
+&none  &none  &none  &none  &none    &none   &kp NUMBER_1  &kp N2  &kp N3  &none
+&none  &none  &none  &none  &none    &none   &kp N4        &kp N5  &kp N6  &none
+&none  &none  &none  &none  &none    &none   &kp N7        &kp N8  &kp N9  &kp N0
+              &none  &none  &none    &trans  &trans        &trans
             >;
         };
     };

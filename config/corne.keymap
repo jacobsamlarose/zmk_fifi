@@ -389,10 +389,10 @@
 
         alt_num_layer {
             bindings = <
-&none  &none           &none              &kp LS(NUMBER_3)  &kp GRAVE    &kp TILDE   &kp NUMBER_1  &kp N2  &kp N3  &kp BACKSPACE
+&none  &none           &none              &kp LA(NUMBER_3)  &kp GRAVE    &kp TILDE   &kp NUMBER_1  &kp N2  &kp N3  &kp BACKSPACE
 &mo 6  &kp LEFT_SHIFT  &none              &kp MINUS         &kp PLUS     &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
 &none  &none           &kp LS(LA(MINUS))  &kp UNDER         &kp EQUAL    &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp N0
-                       &none              &none             &none        &trans      &trans        &trans
+                       &kp LEFT_ALT       &none             &none        &trans      &trans        &trans
             >;
         };
     };

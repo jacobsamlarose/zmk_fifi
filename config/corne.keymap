@@ -344,9 +344,9 @@
 
         nav_layer {
             bindings = <
-&kp TILDE         &kp EXCL  &kp AT     &kp LA(N3)  &kp LA(MINUS)    &none   &none     &none        &none      &none
-&kp PIPE          &kp DLLR  &kp PRCNT  &kp CARET   &kp LA(EQUAL)    &none   &kp HOME  &kp UP       &kp END    &none
-&hm LSHIFT GRAVE  &kp AMPS  &kp STAR   &kp CAPS    &kp DOT          &none   &kp LEFT  &kp DOWN     &kp RIGHT  &sk RSHFT
+&kp TILDE         &kp EXCL  &kp AT     &kp LA(N3)  &kp LA(MINUS)    &none   &kp HOME  &none        &kp PAGE_UP    &none
+&kp PIPE          &kp DLLR  &kp PRCNT  &kp CARET   &kp LA(EQUAL)    &none   &kp END   &kp UP       &kp PAGE_DOWN  &none
+&hm LSHIFT GRAVE  &kp AMPS  &kp STAR   &kp CAPS    &kp DOT          &none   &kp LEFT  &kp DOWN     &kp RIGHT      &sk RSHFT
                             &trans     &trans      &trans           &trans  &trans    &kp C_EJECT
             >;
         };
@@ -389,10 +389,10 @@
 
         alt_num_layer {
             bindings = <
-&none  &none           &none              &kp LA(NUMBER_3)  &kp GRAVE    &kp TILDE   &kp NUMBER_1  &kp N2  &kp N3  &bspc_del
-&mo 6  &kp LEFT_SHIFT  &none              &kp MINUS         &kp PLUS     &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
-&none  &none           &kp LS(LA(MINUS))  &kp UNDER         &kp EQUAL    &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp N0
-                       &kp LEFT_ALT       &mt LGUI TAB      &none        &trans      &trans        &trans
+&none  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp GRAVE      &kp NUMBER_1  &kp N2  &kp N3  &bspc_del
+&mo 6  &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON      &kp N4        &kp N5  &kp N6  &kp SLASH
+&none  &none           &none         &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD     &kp N7        &kp N8  &kp N9  &kp N0
+                       &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &kp BACKSPACE  &kp DELETE    &trans
             >;
         };
     };

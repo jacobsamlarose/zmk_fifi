@@ -325,6 +325,24 @@
             tapping-term-ms = <130>;
             flavor = "tap-preferred";
         };
+
+        bsp_word: bsp_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSP_WORD";
+            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        del_word: del_word {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DEL_WORD";
+            bindings = <&kp DELETE>, <&kp LA(DELETE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -353,9 +371,9 @@
 
         num_layer {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp MINUS    &none   &none      &bdel       &none    &kp ESC
-&kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL    &mo 5   &kp COLON  &bspc_del   &kp SQT  &kp BSLH
-&kp LSHFT  &kp N7  &kp N8  &kp N9  &kp PIPE     &mo 4   &kp SEMI   &kp COMMA   &kp DOT  &kp RSHFT
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp MINUS    &none   &none      &bdel       &kp APOS   &kp ESC
+&kp N0     &kp N4  &kp N5  &kp N6  &kp EQUAL    &mo 5   &kp COLON  &bspc_del   &del_word  &kp BSLH
+&kp LSHFT  &kp N7  &kp N8  &kp N9  &kp PIPE     &mo 4   &kp SEMI   &kp COMMA   &kp DOT    &kp RSHFT
                    &trans  &trans  &trans       &trans  &trans     &caps_word
             >;
         };
@@ -389,10 +407,10 @@
 
         alt_num_layer {
             bindings = <
-&none  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp GRAVE      &kp NUMBER_1  &kp N2  &kp N3  &bspc_del
-&mo 6  &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON      &kp N4        &kp N5  &kp N6  &kp SLASH
-&none  &none           &none         &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD     &kp N7        &kp N8  &kp N9  &kp N0
-                       &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &kp BACKSPACE  &kp DELETE    &trans
+&none  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp GRAVE   &kp NUMBER_1  &kp N2  &kp N3  &bspc_del
+&mo 6  &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
+&none  &none           &none         &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp N0
+                       &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &bsp_word   &del_word     &trans
             >;
         };
     };

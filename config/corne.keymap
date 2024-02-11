@@ -52,17 +52,10 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_capz {
-            timeout-ms = <200>;
-            key-positions = <20 21>;
-            layers = <0>;
-            bindings = <&kp LS(Z)>;
-        };
-
         combo_lshft {
             timeout-ms = <200>;
             key-positions = <2 12>;
-            layers = <0 1 2>;
+            layers = <0>;
             bindings = <&sk LSHIFT>;
         };
 
@@ -192,30 +185,10 @@
             bindings = <&kp LS(EQUAL)>;
         };
 
-        combo_fwd {
-            timeout-ms = <50>;
-            layers = <1 2>;
-            key-positions = <7 8>;
-            bindings = <&kp C_FF>;
-        };
-
-        combo_rwd {
-            timeout-ms = <50>;
-            layers = <1 2>;
-            key-positions = <7 6>;
-            bindings = <&kp C_RW>;
-        };
-
-        combo_play {
-            timeout-ms = <50>;
-            layers = <1 2>;
-            key-positions = <7 8 6>;
-            bindings = <&kp C_PP>;
-        };
-
         combo_rshift {
             bindings = <&sk RSHIFT>;
-            key-positions = <7 17>;
+            key-positions = <6 16>;
+            layers = <0>;
         };
 
         L6_shifted {
@@ -269,6 +242,58 @@
                 <&kp CAPS>,
                 <&macro_tap>,
                 <&kp GRAVE>,
+                <&macro_release>,
+                <&kp CAPS>;
+        };
+
+        FN_up: FN_up {
+            compatible = "zmk,behavior-macro";
+            label = "FN_UP";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp CAPS>;
+        };
+
+        FN_down: FN_down {
+            compatible = "zmk,behavior-macro";
+            label = "FN_DOWN";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS>,
+                <&macro_tap>,
+                <&kp DOWN>,
+                <&macro_release>,
+                <&kp CAPS>;
+        };
+
+        FN_left: FN_left {
+            compatible = "zmk,behavior-macro";
+            label = "FN_LEFT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp CAPS>;
+        };
+
+        FN_right: FN_right {
+            compatible = "zmk,behavior-macro";
+            label = "FN_RIGHT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS>,
+                <&macro_tap>,
+                <&kp RIGHT>,
                 <&macro_release>,
                 <&kp CAPS>;
         };
@@ -395,10 +420,10 @@
 
         os_layer {
             bindings = <
-&none                 &none  &none  &none  &macro_switch     &none   &none         &none         &none  &none
-&kp LG(LS(NUMBER_3))  &none  &none  &none  &macro_windows    &mo 5   &kp C_VOL_UP  &kp C_BRI_UP  &none  &none
-&none                 &none  &none  &none  &none             &mo 4   &kp C_VOL_DN  &kp C_BRI_DN  &none  &none
-                             &none  &none  &none             &trans  &trans        &trans
+&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &none   &none         &none         &none  &none
+&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &mo 5   &kp C_VOL_UP  &kp C_BRI_UP  &none  &none
+&none                 &none     &FN_down      &none      &none               &mo 4   &kp C_VOL_DN  &kp C_BRI_DN  &none  &none
+                                &none         &none      &kp LEFT_CONTROL    &trans  &trans        &trans
             >;
         };
 
@@ -413,10 +438,10 @@
 
         alt_num_layer {
             bindings = <
-&none  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp GRAVE   &kp NUMBER_1  &kp N2  &kp N3  &bspc_del
-&mo 6  &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp SEMI    &kp N4        &kp N5  &kp N6  &kp SLASH
-&none  &none           &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp N0
-                       &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &bsp_word   &del_word     &trans
+&none      &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp GRAVE   &kp NUMBER_1  &kp N2  &kp N3  &bspc_del
+&mo 6      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp SEMI    &kp N4        &kp N5  &kp N6  &kp SLASH
+&kp LS(Z)  &none           &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp N0
+                           &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &bsp_word   &del_word     &trans
             >;
         };
     };

@@ -387,6 +387,8 @@
             label = "TD_LAYERS";
             #binding-cells = <0>;
             bindings = <&mo 1>, <&tog 6>;
+
+            tapping-term-ms = <300>;
         };
     };
 

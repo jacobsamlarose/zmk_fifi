@@ -374,6 +374,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        td_numshift: td_numshift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NUMSHIFT";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&tog 6>;
+        };
     };
 
     macros {
@@ -438,8 +445,8 @@
 
         alt_num_layer {
             bindings = <
-&none      &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp GRAVE   &kp NUMBER_1  &kp N2  &kp N3  &bspc_del
-&mo 6      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp SEMI    &kp N4        &kp N5  &kp N6  &kp SLASH
+&kp GRAVE  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &tog 0
+&mo 6      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
 &kp LS(Z)  &none           &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp N0
                            &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &bsp_word   &del_word     &trans
             >;

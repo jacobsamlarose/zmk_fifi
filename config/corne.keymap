@@ -442,10 +442,10 @@
 
         num_layer {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &none   &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FF   &kp ESC
-&kp N0     &kp N4        &kp N5        &kp N6        &kp EQUAL    &mo 5   &kp COLON     &bsp_word         &del_word  &kp BSLH
-&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp PIPE     &mo 4   &kp SEMI      &kp COMMA         &kp DOT    &kp RSHFT
-                         &trans        &trans        &trans       &trans  &trans        &caps_word
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &kp PIPE  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FF   &kp ESC
+&kp N0     &kp N4        &kp N5        &kp N6        &kp MINUS    &mo 5     &kp COLON     &bsp_word         &del_word  &kp BSLH
+&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp EQUAL    &mo 4     &kp SEMI      &kp COMMA         &kp DOT    &kp RSHFT
+                         &trans        &trans        &trans       &trans    &trans        &caps_word
             >;
         };
 

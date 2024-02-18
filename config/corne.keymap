@@ -302,6 +302,13 @@
                 <&kp CAPS>;
         };
 
+        dotdotdot: dotdotdot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp DOT>;
+            label = "DOTDOTDOT";
+        };
+
         bdel: backdelete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
@@ -399,7 +406,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COLONDOT";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&kp DOT>, <&kp COLON>, <&dotdotdot>;
         };
 
         td_semicomma: td_semicomma {

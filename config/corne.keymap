@@ -200,6 +200,11 @@
             key-positions = <17 27>;
             layers = <6>;
         };
+
+        next_slideo {
+            bindings = <&next_slideover>;
+            key-positions = <11 21>;
+        };
     };
 
     behaviors {

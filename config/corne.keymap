@@ -309,6 +309,19 @@
             label = "DOTDOTDOT";
         };
 
+        next_slideover: next_slideover {
+            compatible = "zmk,behavior-macro";
+            label = "NEXT_SLIDEOVER";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS &kp LCMD>,
+                <&macro_tap>,
+                <&kp BSLH>,
+                <&macro_release>,
+                <&kp CAPS &kp LCMD>;
+        };
+
         bdel: backdelete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
@@ -463,7 +476,7 @@
             bindings = <
 &kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &none   &none         &none         &none  &none
 &none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &mo 5   &kp C_VOL_UP  &kp C_BRI_UP  &none  &none
-&none                 &none     &FN_down      &none      &none               &mo 4   &kp C_VOL_DN  &kp C_BRI_DN  &none  &none
+&none                 &none     &FN_down      &none      &next_slideover     &mo 4   &kp C_VOL_DN  &kp C_BRI_DN  &none  &none
                                 &none         &none      &kp LEFT_CONTROL    &trans  &trans        &trans
             >;
         };

@@ -160,14 +160,14 @@
         combo_emdash {
             timeout-ms = <50>;
             layers = <0 1 2>;
-            key-positions = <14 24>;
+            key-positions = <14 4>;
             bindings = <&kp LS(LA(MINUS))>;
         };
 
         combo_plus {
             timeout-ms = <50>;
             layers = <0 1 2>;
-            key-positions = <14 4>;
+            key-positions = <14 24>;
             bindings = <&kp LS(EQUAL)>;
         };
 

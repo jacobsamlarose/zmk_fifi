@@ -41,6 +41,10 @@
     // retro-tap;
 };
 
+&lt {
+    tapping-term-ms = <180>;
+};
+
 &sk {
     release-after-ms = <3000>;
     quick-release;

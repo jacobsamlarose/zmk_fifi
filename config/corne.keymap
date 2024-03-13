@@ -422,11 +422,11 @@
             tapping-term-ms = <300>;
         };
 
-        td_colondot: td_colondot {
+        td_revcolon_ellip: td_revcolon_ellip {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_COLONDOT";
+            label = "TD_REVCOLON_ELLIP";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>, <&dotdotdot>;
+            bindings = <&rev_colon>, <&kp LA(SEMI)>;
         };
 
         td_semicomma: td_semicomma {
@@ -434,6 +434,15 @@
             label = "TD_SEMICOMMA";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
+        };
+
+        rev_colon: rev_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "REV_COLON";
+            bindings = <&kp COLON>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -463,10 +472,10 @@
 
         num_layer {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &tog 6  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FF   &kp ESC
-&kp N0     &kp N4        &kp N5        &kp N6        &kp MINUS    &mo 5   &kp SEMI      &bsp_word         &del_word  &kp BSLH
-&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp EQUAL    &mo 4   &kp PIPE      &kp COMMA         &kp DOT    &kp RSHFT
-                         &trans        &trans        &trans       &trans  &trans        &caps_word
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &tog 6  &kp C_REWIND        &kp C_PLAY_PAUSE  &kp C_FF   &kp ESC
+&kp N0     &kp N4        &kp N5        &kp N6        &kp MINUS    &mo 5   &td_revcolon_ellip  &bsp_word         &del_word  &kp BSLH
+&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp EQUAL    &mo 4   &kp PIPE            &kp COMMA         &kp DOT    &kp RSHFT
+                         &trans        &trans        &trans       &trans  &trans              &caps_word
             >;
         };
 

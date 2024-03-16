@@ -427,6 +427,8 @@
             label = "TD_REVCOLON_ELLIP";
             #binding-cells = <0>;
             bindings = <&rev_colon>, <&kp LA(SEMI)>;
+
+            tapping-term-ms = <300>;
         };
 
         td_semicomma: td_semicomma {

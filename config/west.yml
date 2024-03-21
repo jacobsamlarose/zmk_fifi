@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: revert-2136-ci/fix-missed-upload-artifacts-action-version-node-16
+      revision: dependabot/npm_and_yarn/docs/eslint-config-prettier-9.1.0
       import: app/west.yml
   self:
     path: config

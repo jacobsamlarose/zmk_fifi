@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: revert-2136-ci/fix-missed-upload-artifacts-action-version-node-16
       import: app/west.yml
   self:
     path: config

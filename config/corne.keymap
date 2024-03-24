@@ -207,6 +207,11 @@
             bindings = <&next_slideover>;
             key-positions = <11 21>;
         };
+
+        Combo_del {
+            bindings = <&bspc_del>;
+            key-positions = <8 9>;
+        };
     };
 
     behaviors {

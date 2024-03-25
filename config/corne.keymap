@@ -209,7 +209,7 @@
         };
 
         Combo_del {
-            bindings = <&bspc_del>;
+            bindings = <&bsp_word>;
             key-positions = <8 9>;
         };
     };

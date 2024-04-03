@@ -180,25 +180,25 @@
         };
 
         Left {
-            bindings = <&kp LEFT>;
+            bindings = <&kp LEFT_ARROW>;
             key-positions = <16 17>;
             layers = <6>;
         };
 
         Right {
-            bindings = <&kp RIGHT>;
+            bindings = <&kp RIGHT_ARROW>;
             key-positions = <17 18>;
             layers = <6>;
         };
 
         Up {
-            bindings = <&kp UP>;
+            bindings = <&kp UP_ARROW>;
             key-positions = <17 7>;
             layers = <6>;
         };
 
         Down {
-            bindings = <&kp DOWN>;
+            bindings = <&kp DOWN_ARROW>;
             key-positions = <17 27>;
             layers = <6>;
         };
@@ -211,6 +211,11 @@
         Combo_del {
             bindings = <&bsp_word>;
             key-positions = <8 9>;
+        };
+
+        combo_colon {
+            bindings = <&td_revcolon_ellip>;
+            key-positions = <16 26>;
         };
     };
 

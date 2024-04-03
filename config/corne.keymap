@@ -213,7 +213,7 @@
             key-positions = <8 9>;
         };
 
-        combo_colon {
+        combo_colonell {
             bindings = <&td_revcolon_ellip>;
             key-positions = <16 26>;
         };

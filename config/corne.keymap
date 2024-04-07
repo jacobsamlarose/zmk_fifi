@@ -415,7 +415,7 @@
             #binding-cells = <0>;
             bindings = <&rev_colon>, <&kp LA(SEMI)>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
         };
 
         td_semicomma: td_semicomma {
@@ -461,10 +461,10 @@
 
         num_layer {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &tog 6  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FF            &kp ESC
-&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &mo 5   &bdel         &bspc_del         &td_revcolon_ellip  &kp BSLH
-&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp N0       &mo 4   &kp PIPE      &kp COMMA         &kp DOT             &kp RSHFT
-                         &trans        &trans        &trans       &trans  &trans        &caps_word
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none   &kp C_REWIND        &kp C_PLAY_PAUSE  &kp C_FF  &kp ESC
+&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &mo 5   &td_revcolon_ellip  &bspc_del         &tog 6    &kp BSLH
+&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp N0       &mo 4   &kp PIPE            &kp COMMA         &kp DOT   &kp RSHFT
+                         &trans        &trans        &trans       &trans  &trans              &caps_word
             >;
         };
 
@@ -497,10 +497,10 @@
 
         alt_num_layer {
             bindings = <
-&bsp_word  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2     &kp N3  &del_word
-&mo 6      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5     &kp N6  &kp SLASH
-&kp LS(Z)  &kp GRAVE       &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8     &kp N9  &ht_shiftz RIGHT_SHIFT N0
-                           &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &kp SPACE   &tog 6        &del_word
+&bsp_word  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &del_word
+&mo 6      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
+&kp LS(Z)  &kp GRAVE       &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
+                           &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &trans      &trans        &tog 6
             >;
         };
     };

@@ -191,13 +191,13 @@
             layers = <6>;
         };
 
-        Up {
+        Combo_Up {
             bindings = <&kp UP_ARROW>;
             key-positions = <17 7>;
             layers = <6>;
         };
 
-        Down {
+        Combo_Down {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <17 27>;
             layers = <6>;
@@ -206,11 +206,6 @@
         next_slideo {
             bindings = <&next_slideover>;
             key-positions = <11 21>;
-        };
-
-        Combo_del {
-            bindings = <&bsp_word>;
-            key-positions = <8 9>;
         };
 
         combo_colonell {

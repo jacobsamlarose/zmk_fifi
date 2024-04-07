@@ -193,7 +193,7 @@
 
         Combo_Up {
             bindings = <&kp UP_ARROW>;
-            key-positions = <17 7>;
+            key-positions = <6 16>;
             layers = <6>;
         };
 

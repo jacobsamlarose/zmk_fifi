@@ -450,6 +450,15 @@
             >;
         };
 
+        alt_num_layer {
+            bindings = <
+&bsp_word  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &del_word
+&mo 6      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
+&kp LS(Z)  &kp GRAVE       &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
+                           &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &trans      &trans        &to 0
+            >;
+        };
+
         nav_layer {
             bindings = <
 &kp TILDE         &kp EXCL  &kp AT     &kp LA(N3)  &kp LA(MINUS)    &none   &kp HOME  &none        &kp PAGE_UP    &none
@@ -492,15 +501,6 @@
 &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none   &kp PG_DN  &none   &none  &none
 &kp F11  &kp F12  &none   &none   &none      &none   &none      &none   &none  &none
                   &none   &none   &none      &trans  &trans     &trans
-            >;
-        };
-
-        alt_num_layer {
-            bindings = <
-&bsp_word  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &del_word
-&mo 6      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
-&kp LS(Z)  &kp GRAVE       &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
-                           &kp LEFT_ALT  &mt LGUI TAB       &mt LEFT_CONTROL ENTER    &trans      &trans        &to 0
             >;
         };
     };

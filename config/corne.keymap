@@ -188,6 +188,11 @@
             key-positions = <17 7>;
             layers = <3>;
         };
+
+        combo_tog2 {
+            bindings = <&tog 2>;
+            key-positions = <0 1>;
+        };
     };
 
     behaviors {

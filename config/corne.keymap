@@ -193,6 +193,11 @@
             bindings = <&tog 2>;
             key-positions = <0 1>;
         };
+
+        combo_tog2_alt {
+            bindings = <&tog 2>;
+            key-positions = <33 29>;
+        };
     };
 
     behaviors {

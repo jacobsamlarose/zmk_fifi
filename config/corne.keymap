@@ -61,7 +61,7 @@
             bindings = <&caps_word>;
         };
 
-        combo_mo3 {
+        combo_mo4 {
             timeout-ms = <300>;
             key-positions = <33 34 35>;
             layers = <0 1 2 3 4>;
@@ -195,12 +195,54 @@
 
         combo_os {
             bindings = <&mo 5>;
-            key-positions = <33 25>;
+            key-positions = <33 34>;
         };
 
         combo_tog1 {
             bindings = <&tog 1>;
             key-positions = <26 27 28 29>;
+        };
+
+        combo_pp {
+            bindings = <&kp C_PP>;
+            key-positions = <11 12 13>;
+            layers = <3>;
+        };
+
+        combo_vup {
+            bindings = <&kp C_VOL_UP>;
+            key-positions = <1 2 3>;
+            layers = <3>;
+        };
+
+        combo_vdn {
+            bindings = <&kp C_VOL_DN>;
+            key-positions = <21 23 22>;
+            layers = <3>;
+        };
+
+        combo_rw {
+            bindings = <&kp C_REWIND>;
+            key-positions = <11 12>;
+            layers = <3>;
+        };
+
+        combo_ff {
+            bindings = <&kp C_FAST_FORWARD>;
+            key-positions = <12 13>;
+            layers = <3>;
+        };
+
+        combo_brup {
+            bindings = <&kp C_BRIGHTNESS_INC>;
+            key-positions = <1 2 3>;
+            layers = <2>;
+        };
+
+        combo_brdn {
+            bindings = <&kp C_BRIGHTNESS_DEC>;
+            key-positions = <21 22 23>;
+            layers = <2>;
         };
     };
 
@@ -496,10 +538,10 @@
 
         os_layer {
             bindings = <
-&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &none   &none         &none         &none  &none
-&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &mo 6   &kp C_VOL_UP  &kp C_BRI_UP  &none  &none
-&none                 &none     &FN_down      &none      &next_slideover     &mo 5   &kp C_VOL_DN  &kp C_BRI_DN  &none  &none
-                                &none         &none      &kp LEFT_CONTROL    &trans  &trans        &trans
+&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &none          &none     &none            &none     &none
+&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp C_BRI_UP   &kp C_PP  &kp C_VOLUME_UP  &none     &none
+&none                 &none     &FN_down      &none      &next_slideover     &kp C_BRI_DEC  &kp C_RW  &kp C_VOL_DN     &kp C_FF  &mo 6
+                                &none         &none      &kp LEFT_CONTROL    &trans         &trans    &trans
             >;
         };
 

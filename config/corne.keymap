@@ -7,7 +7,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -183,7 +182,7 @@
 
         combo_tog1 {
             bindings = <&tog 1>;
-            key-positions = <26 27 28 29>;
+            key-positions = <10 11 12>;
         };
 
         combo_pp {
@@ -231,6 +230,17 @@
         combo_l4_alt {
             bindings = <&tog 4>;
             key-positions = <17 18 19>;
+        };
+
+        bt_clr {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <20 21 22>;
+            layers = <4>;
+        };
+
+        combo_l6_tog {
+            bindings = <&tog 6>;
+            key-positions = <26 27 28 29>;
         };
     };
 
@@ -517,19 +527,19 @@
 
         board_layer {
             bindings = <
-&bt BT0        &bt BT1        &bt BT2        &bt BT3        &bt BT4          &none   &ext_power EP_TOG  &none   &out OUT_TOG  &none
-&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none   &none              &none   &none         &none
-&none          &bt BT_CLR     &none          &bt BT_PRV     &bt BT_NXT       &none   &none              &none   &none         &none
-                              &none          &none          &none            &trans  &trans             &trans
+&bt BT0        &bt BT1        &bt BT2        &bt BT3        &bt BT4          &none   &none   &none   &none  &none
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none   &none   &none   &none  &none
+&out OUT_TOG   &none          &none          &bt BT_PRV     &bt BT_NXT       &none   &none   &none   &none  &none
+                              &none          &none          &none            &trans  &trans  &trans
             >;
         };
 
         os_layer {
             bindings = <
-&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &none          &none     &none            &none     &none
-&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp C_BRI_UP   &kp C_PP  &kp C_VOLUME_UP  &none     &none
-&none                 &none     &FN_down      &none      &next_slideover     &kp C_BRI_DEC  &kp C_RW  &kp C_VOL_DN     &kp C_FF  &mo 6
-                                &none         &none      &kp LEFT_CONTROL    &trans         &trans    &trans
+&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &kp LG(NUMBER_1)  &none   &none   &none  &none
+&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp LG(N0)        &none   &none   &none  &none
+&none                 &none     &FN_down      &none      &next_slideover     &none             &none   &none   &none  &mo 6
+                                &none         &none      &kp LEFT_CONTROL    &trans            &trans  &trans
             >;
         };
 

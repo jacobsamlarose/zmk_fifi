@@ -364,6 +364,16 @@
                 <&kp CAPS &kp LCMD>;
         };
 
+        macro_displaylocn: macro_displaylocn {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_DISPLAYLOCN";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS &kp LC(BACKSLASH)>,
+                <&macro_release>;
+        };
+
         bdel: backdelete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
@@ -536,9 +546,9 @@
 
         os_layer {
             bindings = <
-&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &kp LG(NUMBER_1)  &none   &none   &none  &none
-&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp LG(N0)        &none   &none   &none  &none
-&none                 &none     &FN_down      &none      &next_slideover     &none             &none   &none   &none  &mo 6
+&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &kp LG(NUMBER_1)  &none   &none   &none               &none
+&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp LG(N0)        &none   &none   &macro_displaylocn  &none
+&none                 &none     &FN_down      &none      &next_slideover     &none             &none   &none   &none               &mo 6
                                 &none         &none      &kp LEFT_CONTROL    &trans            &trans  &trans
             >;
         };

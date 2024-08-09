@@ -170,11 +170,6 @@
             key-positions = <11 21>;
         };
 
-        combo_tog2 {
-            bindings = <&tog 2>;
-            key-positions = <28 27 26>;
-        };
-
         combo_os {
             bindings = <&mo 5>;
             key-positions = <33 34>;
@@ -227,8 +222,8 @@
             layers = <2>;
         };
 
-        combo_l4_alt {
-            bindings = <&tog 4>;
+        combo_l5_tog {
+            bindings = <&tog 5>;
             key-positions = <17 18 19>;
         };
 
@@ -238,9 +233,9 @@
             layers = <4>;
         };
 
-        combo_l6_tog {
-            bindings = <&tog 6>;
-            key-positions = <26 27 28 29>;
+        combo_l4_tog {
+            bindings = <&tog 4>;
+            key-positions = <27 28 29>;
         };
 
         combo_worddel {
@@ -248,6 +243,11 @@
             key-positions = <16 17>;
             timeout-ms = <50>;
             layers = <3>;
+        };
+
+        combo_l6_tog {
+            bindings = <&tog 6>;
+            key-positions = <7 8 9 9 9>;
         };
     };
 
@@ -498,6 +498,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        td_shiftCW: td_shiftCW {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHIFTCW";
+            #binding-cells = <0>;
+            bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
+        };
     };
 
     macros {
@@ -510,7 +517,7 @@
             bindings = <
 &kp Q                    &kp W  &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
 &ht_hl 1 A               &kp S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &kp J  &kp K          &kp L    &ht_hl 5 FSLH
-&ht_shiftz LEFT_SHIFT Z  &kp X  &kp C       &kp V         &kp B            &kp N        &kp M  &td_semicomma  &kp DOT  &sk RSHFT
+&ht_shiftz LEFT_SHIFT Z  &kp X  &kp C       &kp V         &kp B            &kp N        &kp M  &td_semicomma  &kp DOT  &td_shiftCW
                                 &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 3 SPACE  &mo 2  &kp CAPS
             >;
         };
@@ -535,10 +542,10 @@
 
         num_layer {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &mo 4   &none               &none       &bdel               &kp ESC
-&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &mo 6   &td_revcolon_ellip  &bspc_del   &td_revcolon_ellip  &kp BSLH
-&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp N0       &mo 5   &kp PIPE            &kp COMMA   &kp DOT             &kp RSHFT
-                         &trans        &trans        &trans       &trans  &trans              &caps_word
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none         &none               &none       &bdel               &kp ESC
+&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &kp LA(BSPC)  &td_revcolon_ellip  &bspc_del   &td_revcolon_ellip  &kp BSLH
+&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp N0       &none         &kp PIPE            &kp COMMA   &kp DOT             &kp RSHFT
+                         &trans        &trans        &trans       &trans        &trans              &caps_word
             >;
         };
 

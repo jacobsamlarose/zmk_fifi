@@ -53,13 +53,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_capw {
-            timeout-ms = <200>;
-            key-positions = <15 25>;
-            layers = <3>;
-            bindings = <&caps_word>;
-        };
-
         combo_mo4 {
             timeout-ms = <300>;
             key-positions = <33 34 35>;

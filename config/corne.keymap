@@ -530,7 +530,7 @@
         nav_layer {
             bindings = <
 &kp TILDE         &kp EXCL  &kp AT     &kp LA(N3)                        &kp LA(MINUS)    &none   &kp HOME  &none        &kp PAGE_UP    &none
-&kp PIPE          &kp DLLR  &kp PRCNT  &caret_cmdalt CARET LA(LEFT_GUI)  &kp LA(EQUAL)    &none   &kp END   &kp UP       &kp PAGE_DOWN  &none
+&kp PIPE          &kp DLLR  &kp PRCNT  &caret_cmdalt LA(LEFT_GUI) CARET  &kp LA(EQUAL)    &none   &kp END   &kp UP       &kp PAGE_DOWN  &none
 &hm LSHIFT GRAVE  &kp AMPS  &kp STAR   &kp CAPS                          &kp DOT          &none   &kp LEFT  &kp DOWN     &kp RIGHT      &sk RSHFT
                             &trans     &trans                            &trans           &trans  &trans    &kp C_EJECT
             >;
@@ -565,10 +565,10 @@
 
         fn_layer {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none   &none           &kp UP_ARROW    &none            &none
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT
-&kp F11  &kp F12  &none   &none   &none      &none   &none           &none           &none            &none
-                  &none   &none   &none      &trans  &trans          &trans
+&kp F1          &kp F2   &kp F3        &kp F4        &kp F5       &none   &none           &kp UP_ARROW    &none            &none
+&kp F6          &kp F7   &kp F8        &kp F9        &kp F10      &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp F11  &kp F12       &none         &none        &none   &none           &none           &none            &none
+                         &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL    &trans  &trans          &trans
             >;
         };
     };

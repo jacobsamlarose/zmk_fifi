@@ -181,13 +181,13 @@
 
         combo_vup {
             bindings = <&kp C_VOL_UP>;
-            key-positions = <1 2 3>;
+            key-positions = <2 12>;
             layers = <3>;
         };
 
         combo_vdn {
             bindings = <&kp C_VOL_DN>;
-            key-positions = <21 23 22>;
+            key-positions = <22 12>;
             layers = <3>;
         };
 
@@ -205,14 +205,14 @@
 
         combo_brup {
             bindings = <&kp C_BRIGHTNESS_INC>;
-            key-positions = <9 19>;
-            layers = <2 6>;
+            key-positions = <7 17>;
+            layers = <6 3>;
         };
 
         combo_brdn {
             bindings = <&kp C_BRIGHTNESS_DEC>;
-            key-positions = <29 19>;
-            layers = <2 6>;
+            key-positions = <17 27>;
+            layers = <6 3>;
         };
 
         combo_l5_tog {

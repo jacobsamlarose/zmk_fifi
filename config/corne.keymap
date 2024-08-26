@@ -560,7 +560,7 @@
             bindings = <
 &kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &kp LG(NUMBER_1)    &none     &kp UP    &none      &none
 &none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp LG(N0)          &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&none                 &none     &FN_down      &none      &next_slideover     &macro_displaylocn  &none     &none     &none      &mo 6
+&kp LSHIFT            &none     &FN_down      &none      &next_slideover     &macro_displaylocn  &none     &none     &none      &mo 6
                                 &none         &none      &kp LEFT_CONTROL    &trans              &trans    &trans
             >;
         };

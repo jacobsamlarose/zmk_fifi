@@ -205,13 +205,13 @@
 
         combo_brup {
             bindings = <&kp C_BRIGHTNESS_INC>;
-            key-positions = <1 2 3>;
+            key-positions = <9 19>;
             layers = <2 6>;
         };
 
         combo_brdn {
             bindings = <&kp C_BRIGHTNESS_DEC>;
-            key-positions = <21 22 23>;
+            key-positions = <29 19>;
             layers = <2 6>;
         };
 

@@ -410,7 +410,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLDTAP_HOMELAY";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <225>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
@@ -558,10 +558,10 @@
 
         os_layer {
             bindings = <
-&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &kp LG(NUMBER_1)  &none   &none   &none               &none
-&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp LG(N0)        &none   &none   &macro_displaylocn  &none
-&none                 &none     &FN_down      &none      &next_slideover     &none             &none   &none   &none               &mo 6
-                                &none         &none      &kp LEFT_CONTROL    &trans            &trans  &trans
+&kp LG(LS(NUMBER_3))  &none     &FN_up        &none      &macro_switch       &kp LG(NUMBER_1)    &none     &kp UP    &none      &none
+&none                 &FN_left  &kp LEFT_ALT  &FN_right  &macro_windows      &kp LG(N0)          &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&none                 &none     &FN_down      &none      &next_slideover     &macro_displaylocn  &none     &none     &none      &mo 6
+                                &none         &none      &kp LEFT_CONTROL    &trans              &trans    &trans
             >;
         };
 

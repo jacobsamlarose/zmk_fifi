@@ -230,9 +230,9 @@
             layers = <3>;
         };
 
-        combo_pp {
-            bindings = <&kp C_PP>;
-            key-positions = <16 17 18>;
+        combo_playp {
+            bindings = <&kp C_PLAY_PAUSE>;
+            key-positions = <11 12 13>;
             layers = <3>;
         };
     };

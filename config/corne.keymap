@@ -173,12 +173,6 @@
             key-positions = <10 11 12>;
         };
 
-        combo_pp {
-            bindings = <&kp C_PP>;
-            key-positions = <11 12 13>;
-            layers = <3>;
-        };
-
         combo_vup {
             bindings = <&kp C_VOL_UP>;
             key-positions = <2 12>;
@@ -194,12 +188,6 @@
         combo_rw {
             bindings = <&kp C_REWIND>;
             key-positions = <11 12>;
-            layers = <3>;
-        };
-
-        combo_ff {
-            bindings = <&kp C_FAST_FORWARD>;
-            key-positions = <12 13>;
             layers = <3>;
         };
 
@@ -234,6 +222,18 @@
         combo_L6_tog {
             bindings = <&tog 6>;
             key-positions = <9 8 7>;
+        };
+
+        combo_ff {
+            bindings = <&kp C_FF>;
+            key-positions = <12 13>;
+            layers = <3>;
+        };
+
+        combo_pp {
+            bindings = <&kp C_PP>;
+            key-positions = <11 12 13>;
+            layers = <3>;
         };
     };
 

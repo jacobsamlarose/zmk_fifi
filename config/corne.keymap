@@ -232,7 +232,7 @@
 
         combo_pp {
             bindings = <&kp C_PP>;
-            key-positions = <11 12 13>;
+            key-positions = <16 17 18>;
             layers = <3>;
         };
     };

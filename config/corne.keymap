@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    chosen { zmk,physical-layout = <&foostan_corne_5col_layout>;
+    chosen { zmk,physical-layout = <&foostan_corne_5col_layout>};
 };
 
 // include <dt-bindings/led/led.h>

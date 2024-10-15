@@ -232,7 +232,7 @@
 
         combo_leftshift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <20 10>;
+            key-positions = <2 12>;
         };
     };
 

@@ -550,6 +550,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mod_undo: mod_undo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_UNDO";
+            bindings = <&kp LEFT_SHIFT>, <&kp LG(Z)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -593,7 +602,7 @@
             bindings = <
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none         &none       &del_word   &bdel        &kp ESC
 &kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &kp LA(BSPC)  &rev_colon  &bspc_del   &kp SQT      &kp BSLH
-&kp LSHFT  &kp N7        &kp N8        &kp N9        &kp N0       &none         &kp PIPE    &kp COMMA   &colndotell  &kp RSHFT
+&kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &none         &kp PIPE    &kp COMMA   &colndotell  &kp RSHFT
                          &trans        &trans        &trans       &trans        &trans      &caps_word
             >;
         };

@@ -576,10 +576,10 @@
         num_layer {
             display-name = "3 (num)";
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none         &none       &del_word   &bdel        &kp ESC
-&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &kp LA(BSPC)  &rev_colon  &bspc_del   &kp SQT      &kp BSLH
-&kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &none         &kp PIPE    &kp COMMA   &colndotell  &kp RSHFT
-                         &trans        &trans        &trans       &trans        &trans      &caps_word
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none                     &none       &del_word   &bdel        &kp ESC
+&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &kp LA(BSPC)              &rev_colon  &bspc_del   &kp SQT      &kp BSLH
+&kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &sk RS(RA(RC(LEFT_GUI)))  &kp PIPE    &kp COMMA   &colndotell  &kp RSHFT
+                         &trans        &trans        &trans       &trans                    &trans      &caps_word
             >;
         };
 
@@ -606,10 +606,10 @@
         fn_layer {
             display-name = "6 (FN+sel";
             bindings = <
-&kp F1          &kp F2   &kp F3        &kp F4        &kp F5       &kp LG(NUMBER_1)      &kp LG(N0)              &kp LS(UP_ARROW)  &none                    &kp HOME
-&kp F6          &kp F7   &kp F8        &kp F9        &kp F10      &kp LG(LA(UP_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp END
-&kp LEFT_SHIFT  &kp F11  &kp F12       &none         &none        &kp LG(LA(DOWN))      &kp LS(LEFT_ARROW)      &kp LS(DOWN)      &kp LS(RIGHT)            &none
-                         &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL    &trans                &trans                  &trans
+&kp F1  &kp F2     &kp F3        &kp F4         &kp F5       &kp LG(NUMBER_1)      &kp LG(N0)              &kp LS(UP_ARROW)  &none                    &kp HOME
+&kp F6  &kp F7     &kp F8        &kp F9         &kp F10      &kp LG(LA(UP_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp END
+&kp Z   &kp LG(Z)  &none         &kp LS(LG(Z))  &none        &kp LG(LA(DOWN))      &kp LS(LEFT_ARROW)      &kp LS(DOWN)      &kp LS(RIGHT)            &kp RIGHT_SHIFT
+                   &kp LEFT_ALT  &kp LEFT_GUI   &kp LCTRL    &trans                &trans                  &trans
             >;
         };
     };

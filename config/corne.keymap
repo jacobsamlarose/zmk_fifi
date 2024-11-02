@@ -533,7 +533,8 @@
             bindings = <&kp LEFT_SHIFT>, <&kp LS(Z)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 

@@ -607,10 +607,10 @@
         fn_layer {
             display-name = "6 (FN+sel";
             bindings = <
-&kp F1  &kp F2     &kp F3        &kp F4         &kp F5       &kp LG(NUMBER_1)      &kp LG(N0)              &kp LS(UP_ARROW)  &none                    &kp HOME
-&kp F6  &kp F7     &kp F8        &kp F9         &kp F10      &kp LG(LA(UP_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp END
-&kp Z   &kp LG(Z)  &none         &kp LS(LG(Z))  &none        &kp LG(LA(DOWN))      &kp LS(LEFT_ARROW)      &kp LS(DOWN)      &kp LS(RIGHT)            &kp RIGHT_SHIFT
-                   &kp LEFT_ALT  &kp LEFT_GUI   &kp LCTRL    &trans                &trans                  &trans
+&kp F1  &kp F2                &kp F3        &kp F4                 &kp F5       &kp LG(NUMBER_1)      &kp LG(N0)              &kp LS(UP_ARROW)  &none                    &kp HOME
+&kp F6  &kp F7                &kp F8        &kp F9                 &kp F10      &kp LG(LA(UP_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp END
+&kp Z   &kp LG(LEFT_BRACKET)  &none         &kp LG(RIGHT_BRACKET)  &none        &kp LG(LA(DOWN))      &kp LS(LEFT_ARROW)      &kp LS(DOWN)      &kp LS(RIGHT)            &kp RIGHT_SHIFT
+                              &kp LEFT_ALT  &kp LEFT_GUI           &kp LCTRL    &trans                &trans                  &trans
             >;
         };
     };

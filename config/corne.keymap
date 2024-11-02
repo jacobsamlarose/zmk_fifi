@@ -527,10 +527,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        lshift_undo: lshift_undo {
+        lshift_z: lshift_z {
             compatible = "zmk,behavior-mod-morph";
-            label = "LSHIFT_UNDO";
-            bindings = <&kp LEFT_SHIFT>, <&kp LG(Z)>;
+            label = "LSHIFT_Z";
+            bindings = <&kp LEFT_SHIFT>, <&kp LS(Z)>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -546,10 +546,10 @@
         default_layer {
             display-name = "0 (base)";
             bindings = <
-&kp Q         &kp W  &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
-&ht_hl 1 A    &kp S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &kp J  &kp K          &kp L    &ht_hl 5 FSLH
-&lshift_undo  &kp X  &ht_hl 6 C  &kp V         &kp B            &kp N        &kp M  &td_semicomma  &kp DOT  &td_shiftCW
-                     &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 3 SPACE  &mo 2  &kp CAPS
+&kp Q       &kp W  &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
+&ht_hl 1 A  &kp S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &kp J  &kp K          &kp L    &ht_hl 5 FSLH
+&lshift_z   &kp X  &ht_hl 6 C  &kp V         &kp B            &kp N        &kp M  &td_semicomma  &kp DOT  &td_shiftCW
+                   &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 3 SPACE  &mo 2  &kp CAPS
             >;
         };
 

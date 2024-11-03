@@ -127,7 +127,7 @@
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <16 26>;
-            bindings = <&kp SQT>;
+            bindings = <&kp DOUBLE_QUOTES>;
         };
 
         combo_dash {
@@ -577,9 +577,9 @@
         num_layer {
             display-name = "3 (num)";
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none                     &none              &del_word   &bdel        &kp ESC
-&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS    &rev_colon                &kp LA(BACKSPACE)  &bspc_del   &kp SQT      &kp BSLH
-&kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &sk RS(RA(RC(LEFT_GUI)))  &kp PIPE           &kp COMMA   &colndotell  &kp RSHFT
+&kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &none                     &kp GRAVE          &kp PIPE    &kp TILDE    &kp ESC
+&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp SLASH    &kp SQT                   &kp LA(BACKSPACE)  &bspc_del   &del_word    &kp BSLH
+&kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &sk RS(RA(RC(LEFT_GUI)))  &rev_colon         &kp COMMA   &colndotell  &kp RSHFT
                          &trans        &trans        &trans       &trans                    &trans             &caps_word
             >;
         };

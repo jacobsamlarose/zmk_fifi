@@ -127,7 +127,7 @@
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <16 26>;
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp SINGLE_QUOTE>;
         };
 
         combo_dash {
@@ -207,7 +207,7 @@
         };
 
         combo_apos2 {
-            bindings = <&kp APOS>;
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <6 16>;
         };
 

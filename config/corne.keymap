@@ -589,9 +589,9 @@
         num_layer {
             display-name = "3 (num)";
             bindings = <
-&kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &kp GRAVE                 &kp PIPE    &kp DOUBLE_QUOTES  &kp TILDE         &kp ESC
-&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp SLASH    &kp LA(BACKSPACE)         &rev_colon  &bspc_del          &kp SINGLE_QUOTE  &kp BSLH
-&kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &sk RS(RA(RC(LEFT_GUI)))  &none       &kp COMMA          &colndotell       &kp RSHFT
+&kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &kp GRAVE                 &kp PIPE    &kp DOUBLE_QUOTES  &kp TILDE    &kp ESC
+&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp SLASH    &kp LA(BACKSPACE)         &rev_colon  &bspc_del          &bsp_word    &kp BSLH
+&kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &sk RS(RA(RC(LEFT_GUI)))  &kp APOS    &kp COMMA          &colndotell  &kp RSHFT
                          &trans        &trans        &trans       &trans                    &trans      &caps_word
             >;
         };

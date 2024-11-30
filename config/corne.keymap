@@ -556,7 +556,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             display-name = "0 (base)";
             bindings = <
 &ht_hl 1 Q  &kp W       &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
@@ -566,7 +566,7 @@
             >;
         };
 
-        alt_num_layer {
+        numbers {
             display-name = "1 (alt num)";
             bindings = <
 &bsp_word  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &del_word
@@ -586,7 +586,7 @@
             >;
         };
 
-        num_layer {
+        alt_nums {
             display-name = "3 (num)";
             bindings = <
 &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &kp GRAVE                 &kp PIPE    &kp DOUBLE_QUOTES  &kp TILDE    &kp ESC
@@ -596,7 +596,7 @@
             >;
         };
 
-        board_layer {
+        board {
             display-name = "4 (board)";
             bindings = <
 &bt BT0        &bt BT1        &bt BT2        &bt BT3        &bt BT4          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
@@ -616,8 +616,8 @@
             >;
         };
 
-        fn_layer {
-            display-name = "6 (FN+sel";
+        sel {
+            display-name = "6 (sel)";
             bindings = <
 &none  &none  &none                 &none         &none        &kp LG(NUMBER_1)      &kp LG(N0)              &kp LS(UP_ARROW)  &none                    &kp HOME
 &none  &none  &kp LG(LEFT_BRACKET)  &kp LG(RBKT)  &none        &kp LG(LA(UP_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp END

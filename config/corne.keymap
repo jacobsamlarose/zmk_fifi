@@ -567,13 +567,15 @@
         };
 
         numbers {
-            display-name = "1 (alt num)";
+            display-name = "1 (nums)";
             bindings = <
 &bsp_word  &kp EXCL        &kp AT_SIGN   &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &del_word
 &none      &kp LEFT_SHIFT  &kp TILDE     &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
 &none      &kp GRAVE       &kp PIPE      &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
                            &kp LEFT_ALT  &mt LGUI LS(TAB)   &mt LEFT_CONTROL ENTER    &trans      &trans        &tog 1
             >;
+
+            label = "1 (numRH)";
         };
 
         nav_layer {
@@ -586,7 +588,7 @@
             >;
         };
 
-        alt_nums {
+        numbers_LH {
             display-name = "3 (num)";
             bindings = <
 &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS     &kp GRAVE                 &kp PIPE    &kp DOUBLE_QUOTES  &kp TILDE    &kp ESC
@@ -594,6 +596,8 @@
 &kp Z      &kp N7        &kp N8        &kp N9        &kp N0       &sk RS(RA(RC(LEFT_GUI)))  &kp APOS    &kp COMMA          &colndotell  &kp RSHFT
                          &trans        &trans        &trans       &trans                    &trans      &caps_word
             >;
+
+            label = "3 (numLH)";
         };
 
         board {

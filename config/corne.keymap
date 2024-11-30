@@ -559,7 +559,7 @@
         default_layer {
             display-name = "0 (base)";
             bindings = <
-&kp Q       &kp W       &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
+&ht_hl 1 Q  &kp W       &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
 &ht_hl 1 A  &ht_hl 6 S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &kp J  &kp K          &kp L    &ht_hl 5 FSLH
 &lshift_z   &kp X       &kp C       &kp V         &kp B            &kp N        &kp M  &td_semicomma  &kp DOT  &td_shiftCW
                         &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 3 SPACE  &mo 2  &kp CAPS

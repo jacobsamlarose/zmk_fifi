@@ -469,6 +469,8 @@
             label = "TD_SEMICOMMA";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
+
+            tapping-term-ms = <250>;
         };
 
         rev_colon: rev_colon {
@@ -652,10 +654,10 @@
         sel {
             display-name = "6 (sel)";
             bindings = <
-&none  &none  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none        &kp LG(NUMBER_1)      &kp LG(N0)              &kp LS(UP_ARROW)  &none                    &kp HOME
-&none  &none  &kp LG(Z)             &kp LS(LG(Z))          &none        &kp LG(LA(UP_ARROW))  &kp LS(LA(LEFT_ARROW))  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp END
-&kp Z  &none  &none                 &none                  &none        &kp LG(LA(DOWN))      &kp LS(LEFT_ARROW)      &kp LS(DOWN)      &kp LS(RIGHT)            &kp RIGHT_SHIFT
-              &kp LEFT_ALT          &kp LEFT_GUI           &kp LCTRL    &trans                &trans                  &trans
+&none  &none  &none         &none         &none        &kp LG(NUMBER_1)      &kp LG(N0)            &none                 &none                  &kp HOME
+&none  &none  &none         &none         &none        &kp LG(LA(UP_ARROW))  &kp LG(LEFT_BRACKET)  &kp LG(LA(UP_ARROW))  &kp LG(RIGHT_BRACKET)  &kp END
+&none  &none  &none         &none         &none        &kp LG(LA(DOWN))      &none                 &kp LA(LG(DOWN))      &none                  &kp RIGHT_SHIFT
+              &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL    &trans                &trans                &trans
             >;
         };
     };

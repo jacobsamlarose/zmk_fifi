@@ -596,8 +596,6 @@
             label = "TD_TRIAND";
             #binding-cells = <0>;
             bindings = <&kp A>, <&tri_and>;
-
-            tapping-term-ms = <160>;
         };
 
         holdtap_td_triand: holdtap_td_triand {

@@ -365,6 +365,27 @@
             label = "MACRO_ZZ";
         };
 
+        tri_the: tri_the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+            label = "TRI_THE";
+        };
+
+        tri_and: tri_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp D>;
+            label = "TRI_AND";
+        };
+
+        tri_ent: tri_ent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp N &kp T>;
+            label = "TRI_ENT";
+        };
+
         bdel: backdelete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
@@ -617,10 +638,10 @@
         nav_layer {
             display-name = "2 (nav)";
             bindings = <
-&kp TILDE   &kp EXCL    &kp AT     &kp LA(N3)      &kp LA(MINUS)    &none                 &macro_displaylocn        &macro_switch  &macro_windows             &kp PG_UP
-&kp PIPE    &kp DOLLAR  &kp PRCNT  &kp LEFT_SHIFT  &none            &kp LA(LG(UP_ARROW))  &kp LA(LEFT)              &kp UP         &kp LA(RIGHT)              &kp PG_DN
-&kp LSHIFT  &kp AMPS    &kp STAR   &none           &none            &kp LG(LA(DOWN))      &left_taphold LA(LEFT) 0  &kp DOWN       &rght_taphold LA(RIGHT) 0  &sk RSHFT
-                        &trans     &trans          &trans           &trans                &trans                    &kp C_EJECT
+&kp TILDE   &kp EXCL    &tri_ent   &kp LA(N3)      &tri_the    &none                 &macro_displaylocn        &macro_switch  &macro_windows             &kp PG_UP
+&tri_and    &kp DOLLAR  &kp PRCNT  &kp LEFT_SHIFT  &none       &kp LA(LG(UP_ARROW))  &kp LA(LEFT)              &kp UP         &kp LA(RIGHT)              &kp PG_DN
+&kp LSHIFT  &kp AMPS    &kp STAR   &none           &none       &kp LG(LA(DOWN))      &left_taphold LA(LEFT) 0  &kp DOWN       &rght_taphold LA(RIGHT) 0  &sk RSHFT
+                        &trans     &trans          &trans      &trans                &trans                    &kp C_EJECT
             >;
         };
 

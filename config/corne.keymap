@@ -465,13 +465,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        td_numshift: td_numshift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_NUMSHIFT";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&tog 6>;
-        };
-
         td_layers: td_layers {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYERS";
@@ -525,16 +518,6 @@
             tapping-term-ms = <250>;
         };
 
-        dollar_alt: dollar_alt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "DOLLAR_ALT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            hold-trigger-key-positions = <11>;
-        };
-
         td_colondot: td_colondot {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COLONDOT";
@@ -542,11 +525,11 @@
             bindings = <&kp DOT>, <&kp COLON>;
         };
 
-        td_zshift: td_zshift {
+        td_trithe: td_trithe {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_ZSHIFT";
+            label = "TD_TRITHE";
             #binding-cells = <0>;
-            bindings = <&kp Z>, <&kp LEFT_SHIFT>;
+            bindings = <&kp T>, <&tri_the>;
 
             tapping-term-ms = <250>;
         };
@@ -558,16 +541,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        lshift_z: lshift_z {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LSHIFT_Z";
-            bindings = <&kp LEFT_SHIFT>, <&kp LS(Z)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         left_arrow: left_arrow {
@@ -605,6 +578,36 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
+
+        td_trient: td_trient {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TRIENT";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&tri_ent>;
+
+            tapping-term-ms = <250>;
+        };
+
+        td_triand: td_triand {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_TRIAND";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&tri_and>;
+
+            tapping-term-ms = <250>;
+        };
+
+        holdtap_td_triand: holdtap_td_triand {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLDTAP_TD_TRIAND";
+            #binding-cells = <2>;
+            tapping-term-ms = <225>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <125>;
+            bindings = <&mo>, <&td_triand>;
+
+            quick-tap-ms = <125>;
+        };
     };
 
     macros {
@@ -616,8 +619,8 @@
         base {
             display-name = "0 (base)";
             bindings = <
-&kp Q                    &kp W       &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
-&ht_hl 1 A               &ht_hl 6 S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &kp J  &ht_hl 2 K     &kp L    &ht_hl 5 FSLH
+&kp Q                    &kp W       &td_trient  &kp R         &td_trithe       &kp Y        &kp U  &kp I          &kp O    &kp P
+&holdtap_td_triand 1 0   &ht_hl 6 S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &kp J  &ht_hl 2 K     &kp L    &ht_hl 5 FSLH
 &ht_shiftz LEFT_SHIFT Z  &kp X       &kp C       &kp V         &kp B            &kp N        &kp M  &td_semicomma  &kp DOT  &td_shiftCW
                                      &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 3 SPACE  &mo 2  &kp CAPS
             >;

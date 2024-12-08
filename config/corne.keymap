@@ -228,7 +228,7 @@
         };
 
         cmb_td_ent {
-            bindings = <&none>;
+            bindings = <&tri_ent>;
             key-positions = <2 12>;
         };
     };
@@ -539,7 +539,7 @@
             #binding-cells = <0>;
             bindings = <&kp H>, <&tri_the>;
 
-            tapping-term-ms = <190>;
+            tapping-term-ms = <225>;
         };
 
         colndotell: colndotell {

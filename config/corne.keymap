@@ -531,7 +531,7 @@
             #binding-cells = <0>;
             bindings = <&kp T>, <&tri_the>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         colndotell: colndotell {
@@ -585,7 +585,7 @@
             #binding-cells = <0>;
             bindings = <&kp E>, <&tri_ent>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         td_triand: td_triand {
@@ -594,7 +594,7 @@
             #binding-cells = <0>;
             bindings = <&kp A>, <&tri_and>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         holdtap_td_triand: holdtap_td_triand {

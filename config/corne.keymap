@@ -612,7 +612,7 @@
             display-name = "0 (base)";
             bindings = <
 &kp Q                    &kp W       &kp E       &kp R         &kp T            &kp Y        &kp U  &kp I          &kp O    &kp P
-&holdtap_td_triand 1 0   &ht_hl 6 S  &ht_hl 2 D  &hm LGUI F    &kp G            &td_trithe   &kp J  &ht_hl 2 K     &kp L    &ht_hl 5 FSLH
+&ht_hl 1 A               &ht_hl 6 S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &kp J  &ht_hl 2 K     &kp L    &ht_hl 5 FSLH
 &ht_shiftz LEFT_SHIFT Z  &kp X       &kp C       &kp V         &kp B            &kp N        &kp M  &td_semicomma  &kp DOT  &td_shiftCW
                                      &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 3 SPACE  &mo 2  &kp CAPS
             >;
@@ -665,20 +665,20 @@
         media {
             display-name = "5 (media)";
             bindings = <
-&kp LG(LS(NUMBER_3))  &none  &none  &none  &none               &none     &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &none
-&none                 &none  &none  &none  &none               &none     &kp C_BRI_UP  &kp C_VOL_UP      &none               &none
-&kp LEFT_ALT          &none  &none  &none  &none               &none     &kp C_BRI_DN  &kp C_VOL_DN      &none               &none
-                             &none  &none  &kp LEFT_CONTROL    &kp C_PP  &trans        &trans
+&kp LG(LS(NUMBER_3))  &none  &none  &none  &none               &none     &kp C_RW       &kp C_VOL_UP  &kp C_FF  &none
+&none                 &none  &none  &none  &none               &none     &kp C_BRI_INC  &kp C_VOL_DN  &none     &none
+&kp LEFT_ALT          &none  &none  &none  &none               &none     &kp C_BRI_DEC  &none         &none     &none
+                             &none  &none  &kp LEFT_CONTROL    &kp C_PP  &trans         &trans
             >;
         };
 
         app {
             display-name = "6 (app)";
             bindings = <
-&none  &none      &macro_switch  &macro_windows  &macro_displaylocn    &none   &none                 &none                 &none                  &none
-&none  &none      &FN_up         &none           &none                 &none   &kp LG(LEFT_BRACKET)  &kp LG(LA(UP_ARROW))  &kp LG(RIGHT_BRACKET)  &none
-&none  &FN_right  &FN_down       &FN_right       &none                 &none   &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
-                  &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL             &trans  &trans                &trans
+&none  &none  &macro_windows  &macro_switch  &macro_displaylocn    &none   &none                 &none                 &none                  &none
+&none  &none  &FN_up          &FN_left       &FN_right             &none   &kp LG(LEFT_BRACKET)  &kp LG(LA(UP_ARROW))  &kp LG(RIGHT_BRACKET)  &none
+&none  &none  &FN_down        &none          &none                 &none   &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
+              &kp LEFT_ALT    &kp LEFT_GUI   &kp LCTRL             &trans  &trans                &trans
             >;
         };
     };

@@ -197,6 +197,7 @@
         combo_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <6 16>;
+            timeout-ms = <75>;
         };
 
         combo_bspword {
@@ -213,6 +214,7 @@
         drafts_bullet {
             bindings = <&kp LC(B)>;
             key-positions = <12 22>;
+            timeout-ms = <75>;
         };
 
         sticky_shift {

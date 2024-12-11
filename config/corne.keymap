@@ -226,6 +226,12 @@
             bindings = <&tri_ent>;
             key-positions = <1 11>;
         };
+
+        cmb_bsp {
+            bindings = <&bsp_word>;
+            key-positions = <17 27>;
+            timeout-ms = <190>;
+        };
     };
 
     behaviors {
@@ -647,10 +653,10 @@
         numbers_LH {
             display-name = "3 (num)";
             bindings = <
-&kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LA(EQUAL)    &kp GRAVE                 &kp PIPE    &kp DOUBLE_QUOTES  &kp TILDE    &kp ESC
-&kp PLUS   &kp N4        &ht_hl 2 N5   &kp N6        &kp SLASH        &kp LA(BACKSPACE)         &rev_colon  &bsp_word          &del_word    &kp BSLH
-&kp EQUAL  &kp N7        &kp N8        &kp N9        &kp N0           &sk RS(RA(RC(LEFT_GUI)))  &kp APOS    &kp COMMA          &colndotell  &kp RSHFT
-                         &trans        &trans        &trans           &trans                    &trans      &caps_word
+&kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp GRAVE          &kp PIPE                        &kp DOUBLE_QUOTES  &kp TILDE                  &kp ESC
+&kp PLUS   &kp N4        &ht_hl 2 N5   &kp N6        &kp PERIOD    &kp LA(BACKSPACE)  &rev_colon                      &kp UP             &del_word                  &kp BSLH
+&kp EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &bsp_word          &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &kp RSHFT
+                         &trans        &trans        &trans        &trans             &trans                          &caps_word
             >;
 
             label = "3 (numLH)";
@@ -681,7 +687,7 @@
             bindings = <
 &none  &none  &macro_switch  &macro_windows  &macro_displaylocn    &none   &none                 &none                 &none                  &none
 &none  &none  &FN_up         &FN_left        &FN_right             &none   &kp LG(LEFT_BRACKET)  &kp LG(LA(UP_ARROW))  &kp LG(RIGHT_BRACKET)  &none
-&none  &none  &FN_down       &none           &none                 &none   &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
+&none  &none  &FN_down       &kp C_EJECT     &none                 &none   &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
               &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL             &trans  &trans                &trans
             >;
         };

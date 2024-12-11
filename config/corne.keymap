@@ -232,6 +232,11 @@
             key-positions = <17 27>;
             timeout-ms = <190>;
         };
+
+        cmb_switch {
+            bindings = <&macro_switch>;
+            key-positions = <11 21>;
+        };
     };
 
     behaviors {

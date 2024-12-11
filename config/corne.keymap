@@ -643,9 +643,9 @@
         nav_layer {
             display-name = "2 (nav)";
             bindings = <
-&kp TILDE   &kp EXCL    &tri_ent   &kp LA(N3)      &tri_the    &none                 &macro_displaylocn        &macro_switch  &macro_windows             &kp PG_UP
-&tri_and    &kp DOLLAR  &kp PRCNT  &kp LEFT_SHIFT  &none       &kp LA(LG(UP_ARROW))  &kp LA(LEFT)              &kp UP         &kp LA(RIGHT)              &kp PG_DN
-&kp LSHIFT  &kp AMPS    &kp STAR   &none           &none       &kp LG(LA(DOWN))      &left_taphold LA(LEFT) 0  &kp DOWN       &rght_taphold LA(RIGHT) 0  &sk RSHFT
+&kp GRAVE   &kp EXCL    &tri_ent   &kp LA(N3)      &tri_the    &none                 &macro_displaylocn        &macro_switch  &macro_windows             &kp PG_UP
+&tri_and    &kp DOLLAR  &kp PRCNT  &kp LEFT_SHIFT  &kp PIPE    &kp LA(LG(UP_ARROW))  &kp LA(LEFT)              &kp UP         &kp LA(RIGHT)              &kp PG_DN
+&kp LSHIFT  &kp AMPS    &kp STAR   &kp TILDE       &none       &kp LG(LA(DOWN))      &left_taphold LA(LEFT) 0  &kp DOWN       &rght_taphold LA(RIGHT) 0  &sk RSHFT
                         &trans     &trans          &trans      &trans                &trans                    &kp C_EJECT
             >;
         };
@@ -653,7 +653,7 @@
         numbers_LH {
             display-name = "3 (num)";
             bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp GRAVE          &kp PIPE                        &kp DOUBLE_QUOTES  &kp TILDE                  &kp ESC
+&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp GRAVE          &kp PIPE                        &kp DOUBLE_QUOTES  &kp APOS                   &kp ESC
 &kp PLUS                     &kp N4        &ht_hl 2 N5   &kp N6        &kp PERIOD    &kp LA(BACKSPACE)  &rev_colon                      &kp UP             &del_word                  &kp BSLH
 &ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &bsp_word          &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &kp RSHFT
                                            &trans        &trans        &trans        &trans             &trans                          &caps_word

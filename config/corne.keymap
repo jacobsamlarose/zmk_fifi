@@ -234,7 +234,12 @@
         cmb_l6 {
             bindings = <&mo 6>;
             key-positions = <12 13>;
-            timeout-ms = <190>;
+            timeout-ms = <175>;
+        };
+
+        cmb_del_alt {
+            bindings = <&bsp_word>;
+            key-positions = <17 27>;
         };
     };
 

@@ -675,10 +675,10 @@
         numbers_LH {
             display-name = "3 (num)";
             bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp GRAVE          &kp PIPE                        &kp DOUBLE_QUOTES  &kp APOS                   &kp ESC
-&kp PLUS                     &kp N4        &ht_hl 2 N5   &kp N6        &kp PERIOD    &kp LA(BACKSPACE)  &rev_colon                      &kp UP             &del_word                  &kp BSLH
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &bsp_word          &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &kp RSHFT
-                                           &trans        &trans        &trans        &trans             &trans                          &caps_word
+&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp GRAVE  &bdel                           &bsp_word   &del_word                  &kp ESC
+&kp PLUS                     &kp N4        &ht_hl 2 N5   &kp N6        &kp PERIOD    &kp PIPE   &kp RA(LEFT)                    &kp UP      &kp RA(RIGHT)              &kp BSLH
+&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &kp GRAVE  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN    &rght_taphold LA(RIGHT) 0  &kp RSHFT
+                                           &trans        &trans        &trans        &trans     &trans                          &caps_word
             >;
 
             label = "3 (numLH)";

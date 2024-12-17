@@ -55,7 +55,7 @@
 
         combo_mo4 {
             timeout-ms = <300>;
-            key-positions = <33 34 35>;
+            key-positions = <33 35>;
             layers = <0 1 2 3 4>;
             bindings = <&mo 4>;
         };
@@ -102,11 +102,11 @@
             layers = <0 1 2 3>;
         };
 
-        combo_colon {
+        combo_redo {
             timeout-ms = <30>;
             key-positions = <18 28>;
             layers = <0 1>;
-            bindings = <&rev_colon>;
+            bindings = <&kp RG(RS(Z))>;
         };
 
         combo_slideover {
@@ -120,7 +120,7 @@
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <16 26>;
-            bindings = <&kp COLON>;
+            bindings = <&kp APOS>;
         };
 
         combo_dash {
@@ -156,11 +156,6 @@
             key-positions = <10 20>;
         };
 
-        combo_os {
-            bindings = <&mo 5>;
-            key-positions = <33 34>;
-        };
-
         combo_tog1 {
             bindings = <&tog 1>;
             key-positions = <10 11 12>;
@@ -187,8 +182,8 @@
             key-positions = <9 8 7>;
         };
 
-        combo_undo {
-            bindings = <&kp LG(Z)>;
+        cmb_dblquo {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <6 16>;
             timeout-ms = <75>;
         };
@@ -196,12 +191,11 @@
         combo_bspword {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 7>;
-            layers = <1 2 3>;
         };
 
         redo {
-            bindings = <&kp LG(LS(Z))>;
-            key-positions = <8 18>;
+            bindings = <&kp LG(LS(DOUBLE_QUOTES))>;
+            key-positions = <18 28>;
         };
 
         drafts_bullet {
@@ -215,19 +209,13 @@
             key-positions = <12 2>;
         };
 
-        cmb_ent {
-            bindings = <&tri_ent>;
+        cmb_switch {
+            bindings = <&macro_switch>;
             key-positions = <1 11>;
         };
 
-        cmb_bsp {
-            bindings = <&bsp_word>;
-            key-positions = <17 16>;
-            timeout-ms = <190>;
-        };
-
-        cmb_switch {
-            bindings = <&macro_switch>;
+        cmb_undo {
+            bindings = <&kp LG(Z)>;
             key-positions = <11 21>;
         };
 
@@ -240,13 +228,11 @@
         cmb_del_alt {
             bindings = <&bsp_word>;
             key-positions = <17 27>;
-            layers = <1 2 3>;
         };
 
-        cmb_aposquo {
-            bindings = <&hold_shift DOUBLE_QUOTES APOS>;
-            key-positions = <17 7>;
-            layers = <0>;
+        cmb_colon {
+            bindings = <&kp COLON>;
+            key-positions = <15 25>;
         };
     };
 

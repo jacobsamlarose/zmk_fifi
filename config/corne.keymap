@@ -120,7 +120,7 @@
             timeout-ms = <50>;
             layers = <0 1>;
             key-positions = <16 26>;
-            bindings = <&kp SINGLE_QUOTE>;
+            bindings = <&kp COLON>;
         };
 
         combo_dash {
@@ -196,7 +196,7 @@
         combo_bspword {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 7>;
-            layers = <0 3>;
+            layers = <1 2 3>;
         };
 
         redo {
@@ -240,6 +240,13 @@
         cmb_del_alt {
             bindings = <&bsp_word>;
             key-positions = <17 27>;
+            layers = <1 2 3>;
+        };
+
+        cmb_aposquo {
+            bindings = <&hold_shift DOUBLE_QUOTES APOS>;
+            key-positions = <17 7>;
+            layers = <0>;
         };
     };
 
@@ -629,6 +636,15 @@
             require-prior-idle-ms = <125>;
             quick-tap-ms = <125>;
             bindings = <&sk>, <&kp>;
+        };
+
+        hold_shift: hold_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
         };
     };
 

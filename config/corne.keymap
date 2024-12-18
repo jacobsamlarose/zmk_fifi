@@ -56,50 +56,50 @@
         combo_mo4 {
             timeout-ms = <300>;
             key-positions = <33 35>;
-            layers = <0 1 2 3 4>;
-            bindings = <&mo 4>;
+            layers = <0 1 2 3>;
+            bindings = <&mo 3>;
         };
 
         combo_lpar {
             timeout-ms = <100>;
             key-positions = <4 3>;
             bindings = <&kp LPAR>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         combo_rpar {
             timeout-ms = <100>;
             key-positions = <6 5>;
             bindings = <&kp RPAR>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
         };
 
         combo_lbkt {
             timeout-ms = <100>;
             key-positions = <13 14>;
             bindings = <&kp LBKT>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
         };
 
         combo_rbkt {
             timeout-ms = <100>;
             key-positions = <15 16>;
             bindings = <&kp RBKT>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         combo_lbrc {
             timeout-ms = <100>;
             key-positions = <23 24>;
             bindings = <&kp LBRC>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
         };
 
         combo_rbrc {
             timeout-ms = <100>;
             key-positions = <25 26>;
             bindings = <&kp RBRC>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
         };
 
         combo_redo {
@@ -126,27 +126,27 @@
         combo_dash {
             timeout-ms = <200>;
             key-positions = <3 13>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
             bindings = <&kp MINUS>;
         };
 
         combo_undersc {
             timeout-ms = <200>;
             key-positions = <13 23>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
             bindings = <&kp LS(MINUS)>;
         };
 
         combo_emdash {
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
             key-positions = <14 4>;
             bindings = <&kp LS(LA(MINUS))>;
         };
 
         combo_plus {
             timeout-ms = <50>;
-            layers = <0 1 2 3>;
+            layers = <0 1 2>;
             key-positions = <14 24>;
             bindings = <&kp LS(EQUAL)>;
         };
@@ -162,23 +162,23 @@
         };
 
         combo_l5_tog {
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <17 18 19>;
         };
 
         bt_clr {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <20 21 22>;
-            layers = <4>;
+            layers = <3>;
         };
 
         combo_l4_tog {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <27 28 29>;
         };
 
         combo_L6_tog {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <9 8 7>;
         };
 
@@ -220,7 +220,7 @@
         };
 
         cmb_l6 {
-            bindings = <&mo 6>;
+            bindings = <&mo 5>;
             key-positions = <12 13>;
             timeout-ms = <175>;
         };
@@ -373,30 +373,6 @@
             label = "MACRO_ZZ";
         };
 
-        tri_the: tri_the {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E>;
-            label = "TRI_THE";
-            tap-ms = <75>;
-        };
-
-        tri_and: tri_and {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp N &kp D>;
-            label = "TRI_AND";
-            tap-ms = <75>;
-        };
-
-        tri_ent: tri_ent {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp N &kp T>;
-            label = "TRI_ENT";
-            tap-ms = <75>;
-        };
-
         bdel: backdelete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
@@ -476,15 +452,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        td_layers: td_layers {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LAYERS";
-            #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 6>;
-
-            tapping-term-ms = <300>;
-        };
-
         td_revcolon_ellip: td_revcolon_ellip {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_REVCOLON_ELLIP";
@@ -519,30 +486,11 @@
             bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
         };
 
-        caret_cmdalt: caret_cmdalt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CARET_CMDALT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <13>;
-            tapping-term-ms = <250>;
-        };
-
         td_colondot: td_colondot {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_COLONDOT";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
-        };
-
-        td_trithe: td_trithe {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_TRITHE";
-            #binding-cells = <0>;
-            bindings = <&kp H>, <&tri_the>;
-
-            tapping-term-ms = <225>;
         };
 
         colndotell: colndotell {
@@ -592,27 +540,6 @@
             flavor = "tap-preferred";
         };
 
-        td_triand: td_triand {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_TRIAND";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&tri_and>;
-
-            tapping-term-ms = <220>;
-        };
-
-        holdtap_td_triand: holdtap_td_triand {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLDTAP_TD_TRIAND";
-            #binding-cells = <2>;
-            tapping-term-ms = <225>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
-            bindings = <&mo>, <&td_triand>;
-
-            quick-tap-ms = <125>;
-        };
-
         ht_hyper: ht_hyper {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_HYPER";
@@ -640,58 +567,52 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
-            display-name = "0 (base)";
+        default {
+            display-name = "0 D";
             bindings = <
 &kp Q                    &kp W       &kp E       &kp R                             &kp T            &kp Y        &kp U                              &kp I       &kp O       &kp P
-&ht_hl 1 A               &ht_hl 6 S  &ht_hl 2 D  &hm LGUI F                        &kp G            &kp H        &kp J                              &ht_hl 2 K  &ht_hl 6 L  &ht_hl 5 FSLH
-&ht_shiftz LEFT_SHIFT Z  &kp X       &kp C       &ht_hyper LS(LA(LC(LEFT_GUI))) V  &kp B            &kp N        &ht_hyper LS(LA(LC(RIGHT_GUI))) M  &td_semic   &kp DOT     &td_shiftCW
-                                     &td_esc     &mt LGUI TAB                      &mt LCTRL RET    &lt 3 SPACE  &mo 2                              &kp CAPS
+&ht_hl 1 A               &ht_hl 5 S  &ht_hl 2 D  &hm LGUI F                        &kp G            &kp H        &kp J                              &ht_hl 2 K  &ht_hl 5 L  &ht_hl 4 FSLH
+&ht_shiftz LEFT_SHIFT Z  &kp X       &kp C       &ht_hyper LS(LA(LC(LEFT_GUI))) V  &ht_hl 3 B       &kp N        &ht_hyper LS(LA(LC(RIGHT_GUI))) M  &td_semic   &kp DOT     &td_shiftCW
+                                     &td_esc     &mt LGUI TAB                      &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
             >;
+
+            label = "0 Df";
         };
 
-        numbers {
-            display-name = "1 (nums)";
+        alt_nums {
+            display-name = "1 (A)";
             bindings = <
-&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)   &kp PLUS                  &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &none
-&none  &kp LEFT_SHIFT  &ht_hl 2 TILDE  &kp UNDER          &kp MINUS                 &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
-&none  &kp GRAVE       &kp PIPE        &kp LA(LS(MINUS))  &kp EQUAL                 &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
-                       &kp LEFT_ALT    &mt LGUI LS(TAB)   &mt LEFT_CONTROL ENTER    &trans      &trans        &tog 1
+&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)  &kp MINUS                 &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &none
+&none  &kp LEFT_SHIFT  &ht_hl 2 GRAVE  &kp TILDE         &kp LA(MINUS)             &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
+&none  &none           &kp PIPE        &kp UNDER         &kp LS(LA(MINUS))         &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp RIGHT_SHIFT
+                       &kp LEFT_ALT    &mt LGUI LS(TAB)  &mt LEFT_CONTROL ENTER    &trans      &none         &none
             >;
 
-            label = "1 (numRH)";
+            label = "1 Alt";
         };
 
-        nav_layer {
-            display-name = "2 (nav)";
+        num_nav {
+            display-name = "3 NN";
             bindings = <
-&kp GRAVE   &kp EXCL    &tri_ent   &kp LA(N3)      &tri_the    &none                 &macro_displaylocn        &macro_switch  &macro_windows             &kp PG_UP
-&tri_and    &kp DOLLAR  &kp PRCNT  &kp LEFT_SHIFT  &kp PIPE    &kp LA(LG(UP_ARROW))  &kp LA(LEFT)              &kp UP         &kp LA(RIGHT)              &kp PG_DN
-&kp LSHIFT  &kp AMPS    &kp STAR   &kp TILDE       &none       &kp LG(LA(DOWN))      &left_taphold LA(LEFT) 0  &kp DOWN       &rght_taphold LA(RIGHT) 0  &sk RSHFT
-                        &trans     &trans          &trans      &trans                &trans                    &kp C_EJECT
-            >;
-        };
-
-        numbers_LH {
-            display-name = "3 (num)";
-            bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp GRAVE  &bdel                           &bsp_word   &del_word                  &kp ESC
-&kp PLUS                     &kp N4        &ht_hl 2 N5   &kp N6        &kp PERIOD    &kp PIPE   &kp RA(LEFT)                    &kp UP      &kp RA(RIGHT)              &kp BSLH
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &kp GRAVE  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN    &rght_taphold LA(RIGHT) 0  &kp RSHFT
-                                           &trans        &trans        &trans        &trans     &trans                          &caps_word
+&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &bsp_word   &del_word                  &kp ESC
+&kp PLUS                     &kp N4        &ht_hl 2 N5   &kp N6        &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP      &kp RA(RIGHT)              &kp BSLH
+&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN    &rght_taphold LA(RIGHT) 0  &kp RSHFT
+                                           &trans        &trans        &trans        &trans              &trans                          &caps_word
             >;
 
-            label = "3 (numLH)";
+            label = "3 NN";
         };
 
-        board {
+        bt_fn {
             display-name = "4 (board)";
             bindings = <
 &bt BT0        &bt BT1        &bt BT2        &bt BT3        &bt BT4          &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&out OUT_TOG   &none          &none          &bt BT_PRV     &bt BT_NXT       &kp F11  &kp F12  &none   &none   &none
+&out OUT_TOG   &none          &none          &bt BT_PRV     &bt BT_NXT       &kp F11  &kp F12  &none   &none   &bt BT_CLR
                               &none          &none          &none            &trans   &trans   &trans
             >;
+
+            label = "3 BT";
         };
 
         media {
@@ -702,9 +623,11 @@
 &kp LEFT_ALT          &none  &none  &none  &none               &none     &kp C_BRI_DEC  &none         &none     &none
                              &none  &none  &kp LEFT_CONTROL    &kp C_PP  &trans         &trans
             >;
+
+            label = "5 Md";
         };
 
-        app {
+        OS_app {
             display-name = "6 (app)";
             bindings = <
 &none  &macro_windows  &macro_switch  &macro_windows  &none                 &none        &none                 &none                 &none                  &none
@@ -712,6 +635,8 @@
 &none  &FN_left        &FN_down       &FN_right       &none                 &none        &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
                        &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL             &kp C_EJECT  &trans                &trans
             >;
+
+            label = "6 OS";
         };
     };
 };

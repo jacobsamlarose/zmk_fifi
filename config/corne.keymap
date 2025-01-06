@@ -193,11 +193,6 @@
             key-positions = <17 7>;
         };
 
-        redo {
-            bindings = <&kp LG(LS(DOUBLE_QUOTES))>;
-            key-positions = <18 28>;
-        };
-
         drafts_bullet {
             bindings = <&kp LC(B)>;
             key-positions = <12 22>;

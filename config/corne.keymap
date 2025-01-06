@@ -467,7 +467,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMIC";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&kp COMMA>, <&kp SEMI>, <&kp COLON>;
 
             tapping-term-ms = <250>;
         };

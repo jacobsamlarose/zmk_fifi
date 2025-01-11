@@ -53,13 +53,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_mo4 {
-            timeout-ms = <300>;
-            key-positions = <33 35>;
-            layers = <0 1 2 3>;
-            bindings = <&mo 3>;
-        };
-
         combo_lpar {
             timeout-ms = <100>;
             key-positions = <4 3>;
@@ -156,30 +149,10 @@
             key-positions = <10 20>;
         };
 
-        combo_tog1 {
-            bindings = <&tog 1>;
-            key-positions = <10 11 12>;
-        };
-
-        combo_l5_tog {
-            bindings = <&tog 4>;
-            key-positions = <17 18 19>;
-        };
-
         bt_clr {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <20 21 22>;
             layers = <3>;
-        };
-
-        combo_l4_tog {
-            bindings = <&tog 3>;
-            key-positions = <27 28 29>;
-        };
-
-        combo_L6_tog {
-            bindings = <&tog 5>;
-            key-positions = <9 8 7>;
         };
 
         cmb_dblquo {
@@ -567,10 +540,10 @@
         default {
             display-name = "0 D";
             bindings = <
-&kp Q                    &kp W       &kp E       &kp R                             &kp T            &kp Y        &kp U                              &kp I       &kp O       &kp P
-&ht_hl 1 A               &ht_hl 5 S  &ht_hl 2 D  &hm LGUI F                        &kp G            &kp H        &kp J                              &ht_hl 2 K  &ht_hl 5 L  &ht_hl 4 FSLH
-&ht_shiftz LEFT_SHIFT Z  &kp X       &kp C       &ht_hyper LS(LA(LC(LEFT_GUI))) V  &ht_hl 3 B       &kp N        &ht_hyper LS(LA(LC(RIGHT_GUI))) M  &td_semic   &kp DOT     &td_shiftCW
-                                     &td_esc     &mt LGUI TAB                      &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
+&kp Q                    &kp W  &kp E       &kp R         &ht_hl 6 T       &kp Y        &kp U                              &kp I       &kp O    &kp P
+&ht_hl 1 A               &kp S  &ht_hl 2 D  &hm LGUI F    &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 5 K  &kp L    &ht_hl 4 FSLH
+&ht_shiftz LEFT_SHIFT Z  &kp X  &kp C       &kp V         &ht_hl 3 B       &ht_hl 7 N   &kp M                              &td_semic   &kp DOT  &td_shiftCW
+                                &td_esc     &mt LGUI TAB  &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
             >;
 
             label = "0 Df";
@@ -579,10 +552,10 @@
         alt_nums {
             display-name = "1 (A)";
             bindings = <
-&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)  &kp MINUS                 &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &none
-&none  &kp LEFT_SHIFT  &ht_hl 2 GRAVE  &kp TILDE         &kp LA(MINUS)             &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
-&none  &none           &kp PIPE        &kp UNDER         &kp LS(LA(MINUS))         &kp PERIOD  &kp N7        &kp N8  &kp N9  &kp RIGHT_SHIFT
-                       &kp LEFT_ALT    &mt LGUI LS(TAB)  &mt LEFT_CONTROL ENTER    &trans      &none         &none
+&none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                          &kp MINUS                 &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &none
+&none  &kp LEFT_SHIFT  &ht_hl 2 GRAVE  &ht_hyper LS(LA(LC(LG(LEFT_GUI)))) TILDE  &kp LA(MINUS)             &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
+&none  &none           &kp PIPE        &kp UNDER                                 &kp LS(LA(MINUS))         &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
+                       &kp LEFT_ALT    &mt LGUI LS(TAB)                          &mt LEFT_CONTROL ENTER    &trans      &none         &none
             >;
 
             label = "1 Alt";
@@ -592,7 +565,7 @@
             display-name = "3 NN";
             bindings = <
 &kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &bsp_word   &del_word                  &kp ESC
-&kp PLUS                     &kp N4        &ht_hl 2 N5   &kp N6        &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP      &kp RA(RIGHT)              &kp BSLH
+&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP      &kp RA(RIGHT)              &kp BSLH
 &ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN    &rght_taphold LA(RIGHT) 0  &kp RSHFT
                                            &trans        &trans        &trans        &trans              &trans                          &caps_word
             >;
@@ -634,6 +607,28 @@
             >;
 
             label = "5 OS";
+        };
+
+        Toggle {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &tog 1  &tog 2  &tog 3  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &tog 4  &tog 5  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "6 TG";
+        };
+
+        iPadOS {
+            bindings = <
+&trans  &trans    &FN_up    &trans     &trans    &trans  &trans                  &kp RS(RA(RC(RG(N5))))  &trans                  &trans
+&trans  &FN_left  &FN_down  &FN_right  &trans    &trans  &kp RS(RA(RC(RG(N7))))  &kp RA(RS(RC(RG(N8))))  &kp RS(RA(RC(RG(N9))))  &trans
+&trans  &trans    &trans    &trans     &trans    &trans  &trans                  &trans                  &trans                  &trans
+                  &trans    &trans     &trans    &trans  &trans                  &trans
+            >;
+
+            label = "7 iP";
         };
     };
 };

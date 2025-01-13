@@ -187,7 +187,7 @@
             key-positions = <11 21>;
         };
 
-        cmb_l6 {
+        cmb_l5 {
             bindings = <&mo 5>;
             key-positions = <12 13>;
             timeout-ms = <175>;
@@ -196,13 +196,13 @@
         cmb_del_alt {
             bindings = <&bsp_word>;
             key-positions = <17 27>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
 
         cmb_colon {
             bindings = <&kp COLON>;
             key-positions = <16 17>;
-            timeout-ms = <50>;
+            timeout-ms = <100>;
         };
     };
 

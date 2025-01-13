@@ -112,7 +112,7 @@
         combo_apos {
             timeout-ms = <50>;
             layers = <0 1>;
-            key-positions = <16 26>;
+            key-positions = <17 27>;
             bindings = <&kp APOS>;
         };
 
@@ -157,13 +157,13 @@
 
         cmb_dblquo {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <6 16>;
+            key-positions = <7 17>;
             timeout-ms = <75>;
         };
 
         combo_bspword {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <17 7>;
+            key-positions = <16 6>;
         };
 
         drafts_bullet {
@@ -195,7 +195,7 @@
 
         cmb_del_alt {
             bindings = <&bsp_word>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             timeout-ms = <100>;
         };
 

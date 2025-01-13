@@ -165,7 +165,7 @@
 
         combo_bspword {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <7 17>;
+            key-positions = <6 16>;
             layers = <0 2 1>;
         };
 
@@ -199,9 +199,9 @@
             timeout-ms = <175>;
         };
 
-        cmb_del_alt {
-            bindings = <&bsp_word>;
-            key-positions = <16 6>;
+        bsp_del {
+            bindings = <&bspc_del>;
+            key-positions = <7 17>;
             timeout-ms = <100>;
             layers = <0 1 2>;
         };
@@ -415,7 +415,7 @@
         bsp_word: bsp_word {
             compatible = "zmk,behavior-mod-morph";
             label = "BSP_WORD";
-            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;

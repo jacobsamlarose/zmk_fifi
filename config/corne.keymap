@@ -580,7 +580,7 @@
         num_nav {
             display-name = "3 NN";
             bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &bsp_word   &del_word                  &kp ESC
+&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &bspc_del   &del_word                  &kp ESC
 &kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP      &kp RA(RIGHT)              &kp BSLH
 &ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN    &rght_taphold LA(RIGHT) 0  &kp RSHFT
                                            &trans        &trans        &trans        &trans              &trans                          &caps_word

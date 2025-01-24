@@ -199,8 +199,8 @@
             timeout-ms = <175>;
         };
 
-        bsp_del {
-            bindings = <&bspc_del>;
+        bsp_word {
+            bindings = <&bsp_word>;
             key-positions = <7 17>;
             timeout-ms = <100>;
             layers = <0 1 2>;

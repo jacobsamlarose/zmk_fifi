@@ -351,6 +351,14 @@
             label = "MACRO_ZZ";
         };
 
+        macro_semicspace: macro_semicspace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp SEMI &kp SPACE>, <&macro_release>;
+
+            label = "MACRO_SEMICSPACE";
+        };
+
         bdel: backdelete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
@@ -443,7 +451,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMIC";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>, <&kp COLON>;
+            bindings = <&kp COMMA>, <&macro_semicspace>, <&kp COLON>;
 
             tapping-term-ms = <250>;
         };

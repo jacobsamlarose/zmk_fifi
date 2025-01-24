@@ -354,8 +354,7 @@
         macro_semicspace: macro_semicspace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp SEMI &kp SPACE>, <&macro_release>;
-
+            bindings = <&kp SEMI &kp SPACE>;
             label = "MACRO_SEMICSPACE";
         };
 

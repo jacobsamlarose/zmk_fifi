@@ -159,7 +159,7 @@
         drafts_bullet {
             bindings = <&kp LC(B)>;
             key-positions = <12 22>;
-            timeout-ms = <75>;
+            timeout-ms = <200>;
             layers = <0>;
         };
 
@@ -178,39 +178,40 @@
             bindings = <&kp LG(Z)>;
             key-positions = <11 1>;
             layers = <0 1 2>;
+            timeout-ms = <200>;
         };
 
         cmb_l5 {
             bindings = <&mo 5>;
             key-positions = <12 13>;
-            timeout-ms = <175>;
+            timeout-ms = <200>;
         };
 
         bsp_word {
             bindings = <&bsp_word>;
             key-positions = <7 17>;
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <0 1 2>;
         };
 
         cmb_semi {
             bindings = <&kp SEMI>;
             key-positions = <16 26>;
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <0 1>;
         };
 
         cmb_colon {
             bindings = <&kp COLON>;
             key-positions = <16 26>;
-            timeout-ms = <100>;
+            timeout-ms = <200>;
             layers = <2>;
         };
 
         cmb_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <17 27>;
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             layers = <2>;
         };
     };

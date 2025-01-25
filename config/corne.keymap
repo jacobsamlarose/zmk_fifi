@@ -189,9 +189,9 @@
 
         bsp_word {
             bindings = <&bsp_word>;
-            key-positions = <7 17>;
+            key-positions = <6 16>;
             timeout-ms = <200>;
-            layers = <0 1 2>;
+            layers = <2 0 1>;
         };
 
         cmb_semi {
@@ -213,6 +213,13 @@
             key-positions = <17 27>;
             timeout-ms = <200>;
             layers = <2>;
+        };
+
+        bsp_del {
+            bindings = <&bspc_del>;
+            key-positions = <7 17>;
+            timeout-ms = <200>;
+            layers = <0 1 2>;
         };
     };
 
@@ -452,7 +459,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMIC";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&macro_semicspace>, <&kp COLON>;
+            bindings = <&kp COMMA>, <&macro_semicspace>, <&kp SEMICOLON>;
 
             tapping-term-ms = <250>;
         };
@@ -590,9 +597,9 @@
         num_nav {
             display-name = "3 NN";
             bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &bspc_del   &td_aposquo                &kp ESC
-&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP      &kp RA(RIGHT)              &kp BSLH
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN    &rght_taphold LA(RIGHT) 0  &kp RSHFT
+&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &td_aposquo  &td_aposquo                &kp ESC
+&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP       &kp RA(RIGHT)              &kp BSLH
+&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN     &rght_taphold LA(RIGHT) 0  &kp RSHFT
                                            &trans        &trans        &trans        &trans              &trans                          &caps_word
             >;
 

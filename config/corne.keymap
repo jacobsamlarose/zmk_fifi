@@ -198,14 +198,14 @@
             bindings = <&kp SEMI>;
             key-positions = <17 27>;
             timeout-ms = <200>;
-            layers = <0 1>;
+            layers = <2>;
         };
 
         cmb_colon {
             bindings = <&kp COLON>;
             key-positions = <17 27>;
             timeout-ms = <200>;
-            layers = <2>;
+            layers = <0>;
         };
 
         cmb_quotes {

@@ -591,7 +591,7 @@
             display-name = "1SYN";
             bindings = <
 &none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                          &kp MINUS                 &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &kp BACKSPACE
-&none  &kp LEFT_SHIFT  &ht_hl 2 GRAVE  &ht_hyper LS(LA(LC(LG(LEFT_GUI)))) TILDE  &kp LA(MINUS)             &kp COLON   &kp N4        &kp N5  &kp N6  &kp SLASH
+&none  &kp LEFT_SHIFT  &ht_hl 2 GRAVE  &ht_hyper LS(LA(LC(LG(LEFT_GUI)))) TILDE  &kp LA(MINUS)             &kp COLON   &kp N4        &kp N5  &kp N6  &kp BACKSLASH
 &none  &none           &kp PIPE        &kp UNDER                                 &kp LS(LA(MINUS))         &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
                        &kp LEFT_ALT    &mt LGUI LS(TAB)                          &mt LEFT_CONTROL ENTER    &trans      &none         &none
             >;
@@ -603,7 +603,7 @@
             display-name = "2NAV";
             bindings = <
 &kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &td_aposquo  &td_aposquo                &kp ESC
-&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP       &kp RA(RIGHT)              &kp BSLH
+&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP       &kp RA(RIGHT)              &td_aposquo
 &ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN     &rght_taphold LA(RIGHT) 0  &kp RSHFT
                                            &trans        &trans        &trans        &trans              &trans                          &caps_word
             >;

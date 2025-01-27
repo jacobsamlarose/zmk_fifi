@@ -221,6 +221,11 @@
             timeout-ms = <200>;
             layers = <0 1 2>;
         };
+
+        cmb_stickyshift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <2 12>;
+        };
     };
 
     behaviors {

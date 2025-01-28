@@ -97,7 +97,7 @@
 
         combo_redo {
             timeout-ms = <30>;
-            key-positions = <18 8>;
+            key-positions = <18 28>;
             layers = <0 1>;
             bindings = <&kp RG(RS(Z))>;
         };
@@ -112,7 +112,7 @@
         combo_apos {
             timeout-ms = <50>;
             layers = <0 1>;
-            key-positions = <16 26>;
+            key-positions = <17 27>;
             bindings = <&kp APOS>;
         };
 
@@ -170,13 +170,13 @@
 
         cmb_switch {
             bindings = <&macro_switch>;
-            key-positions = <11 21>;
+            key-positions = <11 1>;
             layers = <0 1 2>;
         };
 
         cmb_undo {
             bindings = <&kp LG(Z)>;
-            key-positions = <11 1>;
+            key-positions = <11 21>;
             layers = <0 1 2>;
             timeout-ms = <200>;
         };
@@ -189,28 +189,28 @@
 
         bsp_word {
             bindings = <&bsp_word>;
-            key-positions = <6 16>;
+            key-positions = <8 18>;
             timeout-ms = <200>;
-            layers = <2 0 1>;
+            layers = <2 1 0>;
         };
 
         cmb_semi {
             bindings = <&kp SEMI>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             timeout-ms = <200>;
             layers = <2>;
         };
 
         cmb_colon {
             bindings = <&kp COLON>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
         cmb_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 26>;
+            key-positions = <17 27>;
             timeout-ms = <200>;
             layers = <2>;
         };
@@ -225,6 +225,13 @@
         cmb_stickyshift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <2 12>;
+        };
+
+        cmb_aposindex {
+            bindings = <&td_aposquo>;
+            key-positions = <6 16>;
+            layers = <0 1 2>;
+            timeout-ms = <200>;
         };
     };
 
@@ -602,10 +609,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &bdel                           &td_aposquo  &td_aposquo                &kp ESC
-&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP       &kp RA(RIGHT)              &td_aposquo
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN     &rght_taphold LA(RIGHT) 0  &kp RSHFT
-                                           &trans        &trans        &trans        &trans              &trans                          &caps_word
+&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &kp RG(LEFT_ARROW)              &td_aposquo        &kp RG(RIGHT_ARROW)        &kp ESC
+&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &td_aposquo
+&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &kp RSHFT
+                                           &trans        &trans        &trans        &trans              &trans                          &kp LG(BACKSPACE)
             >;
 
             label = "2 NAV";

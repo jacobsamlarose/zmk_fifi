@@ -112,7 +112,7 @@
         combo_apos {
             timeout-ms = <50>;
             layers = <0 1>;
-            key-positions = <16 26>;
+            key-positions = <17 27>;
             bindings = <&kp APOS>;
         };
 
@@ -196,21 +196,21 @@
 
         cmb_semi {
             bindings = <&kp SEMI>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             timeout-ms = <200>;
             layers = <2>;
         };
 
         cmb_colon {
             bindings = <&kp COLON>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
         cmb_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 26>;
+            key-positions = <17 27>;
             timeout-ms = <200>;
             layers = <2>;
         };
@@ -609,7 +609,7 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &kp RG(LEFT_ARROW)              &td_aposquo        &kp RG(RIGHT_ARROW)        &kp ESC
+&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
 &kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &td_aposquo
 &ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &kp RSHFT
                                            &trans        &trans        &trans        &trans              &trans                          &kp LG(BACKSPACE)

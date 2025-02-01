@@ -228,10 +228,10 @@
         };
 
         aposquo_ring {
-            bindings = <&td_aposquo>;
+            bindings = <&kp APOS>;
             key-positions = <8 18>;
             timeout-ms = <200>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         colon_index {
@@ -239,6 +239,11 @@
             key-positions = <6 16>;
             timeout-ms = <200>;
             layers = <2>;
+        };
+
+        cmb_dblquote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 9>;
         };
     };
 

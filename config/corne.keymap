@@ -97,8 +97,8 @@
 
         combo_redo {
             timeout-ms = <30>;
-            key-positions = <18 8>;
-            layers = <0 1>;
+            key-positions = <1 11>;
+            layers = <2 1>;
             bindings = <&kp RG(RS(Z))>;
         };
 
@@ -112,7 +112,7 @@
         combo_apos {
             timeout-ms = <50>;
             layers = <0 1>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             bindings = <&kp APOS>;
         };
 
@@ -189,28 +189,21 @@
 
         bsp_word {
             bindings = <&bsp_word>;
-            key-positions = <7 17>;
+            key-positions = <6 16>;
             timeout-ms = <200>;
-            layers = <2>;
-        };
-
-        cmb_semi {
-            bindings = <&kp SEMI>;
-            key-positions = <16 26>;
-            timeout-ms = <200>;
-            layers = <2>;
+            layers = <0>;
         };
 
         cmb_colon {
             bindings = <&kp COLON>;
-            key-positions = <16 26>;
+            key-positions = <17 27>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
         cmb_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             timeout-ms = <200>;
             layers = <2>;
         };
@@ -229,9 +222,23 @@
 
         cmb_aposindex {
             bindings = <&td_aposquo>;
-            key-positions = <6 16>;
-            layers = <0 1 2>;
+            key-positions = <7 17>;
+            layers = <2>;
             timeout-ms = <200>;
+        };
+
+        aposquo_ring {
+            bindings = <&td_aposquo>;
+            key-positions = <8 18>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        colon_index {
+            bindings = <&kp COLON>;
+            key-positions = <6 16>;
+            timeout-ms = <200>;
+            layers = <2>;
         };
     };
 

@@ -610,7 +610,7 @@
             display-name = "2NAV";
             bindings = <
 &kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
-&kp MINUS                    &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &kp COLON           &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &td_aposquo
+&kp MINUS                    &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &kp COLON           &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp APOS
 &ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &kp SEMI            &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shiftz RSHFT EQUAL
                                            &trans        &trans        &trans        &trans              &trans                          &kp LG(BACKSPACE)
             >;

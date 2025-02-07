@@ -111,8 +111,8 @@
 
         combo_apos {
             timeout-ms = <50>;
-            layers = <0 1>;
-            key-positions = <16 26>;
+            layers = <2>;
+            key-positions = <17 27>;
             bindings = <&kp APOS>;
         };
 
@@ -158,7 +158,7 @@
 
         drafts_bullet {
             bindings = <&kp LC(B)>;
-            key-positions = <12 22>;
+            key-positions = <15 25>;
             timeout-ms = <200>;
             layers = <0>;
         };
@@ -196,16 +196,16 @@
 
         cmb_colon {
             bindings = <&kp COLON>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
         cmb_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 26>;
+            key-positions = <27 17>;
             timeout-ms = <200>;
-            layers = <2>;
+            layers = <0>;
         };
 
         bsp_del {
@@ -224,14 +224,7 @@
             bindings = <&td_aposquo>;
             key-positions = <17 16>;
             timeout-ms = <200>;
-            layers = <0 1 2>;
-        };
-
-        colon_index {
-            bindings = <&kp COLON>;
-            key-positions = <6 16>;
-            timeout-ms = <200>;
-            layers = <2>;
+            layers = <0>;
         };
 
         cmb_dblquote {
@@ -616,9 +609,9 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp MINUS                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
-&kp PLUS                     &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &macro_switch       &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &td_aposquo
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &macro_windows      &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &kp RSHFT
+&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &macro_displaylocn  &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
+&kp MINUS                    &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &kp COLON           &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &td_aposquo
+&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &kp SEMI            &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &kp RSHFT
                                            &trans        &trans        &trans        &trans              &trans                          &kp LG(BACKSPACE)
             >;
 
@@ -652,7 +645,7 @@
         OS_app {
             display-name = "5OS";
             bindings = <
-&none  &macro_windows  &macro_switch  &macro_windows  &none                 &none        &none                 &none                 &none                  &none
+&none  &macro_windows  &macro_switch  &macro_windows  &none                 &none        &macro_switch         &macro_windows        &macro_displaylocn     &none
 &none  &macro_switch   &FN_up         &macro_switch   &macro_displaylocn    &none        &kp LG(LEFT_BRACKET)  &kp LG(LA(UP_ARROW))  &kp LG(RIGHT_BRACKET)  &none
 &none  &FN_left        &FN_down       &FN_right       &none                 &none        &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
                        &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL             &kp C_EJECT  &trans                &trans

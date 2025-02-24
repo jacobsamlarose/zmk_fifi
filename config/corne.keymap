@@ -194,8 +194,8 @@
             layers = <0>;
         };
 
-        cmb_slash {
-            bindings = <&kp SLASH>;
+        cmb_que {
+            bindings = <&kp QUESTION>;
             key-positions = <27 17>;
             timeout-ms = <200>;
             layers = <0>;
@@ -211,13 +211,6 @@
         cmb_stickyshift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <2 12>;
-        };
-
-        cmb_bslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <27 17>;
-            timeout-ms = <200>;
-            layers = <1>;
         };
     };
 
@@ -595,10 +588,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &kp SEMI      &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
-&kp MINUS                    &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &kp COLON     &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp SLASH
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &kp QUESTION  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shiftz RSHFT EQUAL
-                                           &trans        &trans        &trans        &trans        &trans                          &kp LG(BACKSPACE)
+&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &sk RCTRL      &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
+&kp MINUS                    &kp N4        &kp N5        &ht_hl 5 N6   &kp PERIOD    &sk RIGHT_ALT  &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp SLASH
+&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shiftz RSHFT EQUAL
+                                           &trans        &trans        &trans        &trans         &trans                          &kp LG(BACKSPACE)
             >;
 
             label = "2 NAV";

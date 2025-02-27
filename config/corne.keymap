@@ -106,7 +106,7 @@
         combo_slideover {
             timeout-ms = <30>;
             layers = <0>;
-            key-positions = <0 10>;
+            key-positions = <0 1>;
             bindings = <&macro_slideover>;
         };
 

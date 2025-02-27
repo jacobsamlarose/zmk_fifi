@@ -218,14 +218,14 @@
             bindings = <&kp DQT>;
             key-positions = <19 29>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <200>;
         };
 
         combo_a {
             bindings = <&kp LS(A)>;
             key-positions = <10 20>;
             layers = <0>;
-            timeout-ms = <150>;
+            timeout-ms = <200>;
         };
     };
 

@@ -223,7 +223,7 @@
 
         combo_a {
             bindings = <&kp LS(A)>;
-            key-positions = <10 20>;
+            key-positions = <10 0>;
             layers = <0>;
             timeout-ms = <200>;
         };

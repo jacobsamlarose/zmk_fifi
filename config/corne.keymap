@@ -103,13 +103,6 @@
             bindings = <&kp RG(RS(Z))>;
         };
 
-        combo_slideover {
-            timeout-ms = <30>;
-            layers = <0>;
-            key-positions = <0 1>;
-            bindings = <&macro_slideover>;
-        };
-
         combo_dash {
             timeout-ms = <200>;
             key-positions = <3 13>;
@@ -136,12 +129,6 @@
             layers = <0 1 2>;
             key-positions = <14 24>;
             bindings = <&kp LS(EQUAL)>;
-        };
-
-        next_slideo {
-            bindings = <&next_slideover>;
-            key-positions = <10 20>;
-            layers = <0>;
         };
 
         bt_clr {
@@ -223,7 +210,7 @@
 
         combo_a {
             bindings = <&kp LS(A)>;
-            key-positions = <10 0>;
+            key-positions = <10 20>;
             layers = <0>;
             timeout-ms = <200>;
         };
@@ -639,10 +626,10 @@
         OS_app {
             display-name = "5OS";
             bindings = <
-&none  &macro_windows   &macro_switch  &macro_windows  &none                 &none        &macro_switch         &macro_windows        &macro_displaylocn     &none
-&none  &kp LS(LG(TAB))  &FN_up         &kp LG(TAB)     &macro_displaylocn    &none        &kp LG(LEFT_BRACKET)  &kp LG(LA(UP_ARROW))  &kp LG(RIGHT_BRACKET)  &none
-&none  &FN_left         &FN_down       &FN_right       &none                 &none        &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
-                        &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL             &kp C_EJECT  &trans                &trans
+&macro_slideover  &macro_windows   &macro_switch  &macro_windows  &none                 &none        &macro_switch         &macro_windows        &macro_displaylocn     &none
+&next_slideover   &kp LS(LG(TAB))  &FN_up         &kp LG(TAB)     &macro_displaylocn    &none        &kp LG(LEFT_BRACKET)  &kp LG(LA(UP_ARROW))  &kp LG(RIGHT_BRACKET)  &none
+&none             &FN_left         &FN_down       &FN_right       &none                 &none        &kp LG(NUMBER_1)      &kp LA(LG(DOWN))      &kp LG(N0)             &kp RIGHT_SHIFT
+                                   &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL             &kp C_EJECT  &trans                &trans
             >;
 
             label = "5 OS";

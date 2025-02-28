@@ -226,6 +226,20 @@
             bindings = <&tog 2>;
             key-positions = <26 27 28>;
         };
+
+        cmb_slash {
+            bindings = <&kp KP_SLASH>;
+            key-positions = <18 28>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        cmb_bckslsh {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <18 28>;
+            timeout-ms = <200>;
+            layers = <1 2>;
+        };
     };
 
     behaviors {

@@ -214,6 +214,13 @@
             layers = <0>;
             timeout-ms = <200>;
         };
+
+        cmb_pp {
+            bindings = <&kp C_PLAY_PAUSE>;
+            key-positions = <7 17>;
+            timeout-ms = <200>;
+            layers = <4>;
+        };
     };
 
     behaviors {

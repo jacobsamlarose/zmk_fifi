@@ -221,6 +221,11 @@
             timeout-ms = <200>;
             layers = <4>;
         };
+
+        cmb_navtog {
+            bindings = <&tog 2>;
+            key-positions = <26 27 28>;
+        };
     };
 
     behaviors {

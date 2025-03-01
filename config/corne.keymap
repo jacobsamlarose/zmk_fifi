@@ -146,7 +146,7 @@
 
         mo_L6 {
             bindings = <&mo 6>;
-            key-positions = <12 11 13>;
+            key-positions = <1 2 3>;
         };
 
         cmb_switch {
@@ -240,6 +240,12 @@
             key-positions = <18 28>;
             timeout-ms = <200>;
             layers = <1 2>;
+        };
+
+        cmb_navtogl {
+            bindings = <&tog 2>;
+            key-positions = <11 12 13>;
+            timeout-ms = <200>;
         };
     };
 

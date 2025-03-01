@@ -229,7 +229,7 @@
         };
 
         cmb_slash {
-            bindings = <&kp KP_SLASH>;
+            bindings = <&mod_slash>;
             key-positions = <18 28>;
             timeout-ms = <200>;
             layers = <0>;
@@ -581,6 +581,15 @@
             bindings = <&kp APOS>, <&kp DOUBLE_QUOTES>;
 
             tapping-term-ms = <250>;
+        };
+
+        mod_slash: mod_slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_SLASH";
+            bindings = <&kp KP_SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 

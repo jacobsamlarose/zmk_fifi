@@ -608,10 +608,10 @@
         default {
             display-name = "0DFL";
             bindings = <
-&kp Q                    &kp W  &kp E           &kp R         &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
-&ht_hl 1 A               &kp S  &hm LEFT_GUI D  &ht_hl 2 F    &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 5 K  &kp L    &ht_hl 4 APOS
-&ht_shiftz LEFT_SHIFT Z  &kp X  &kp C           &kp V         &ht_hl 3 B       &kp N        &kp M                              &td_semic   &kp DOT  &td_shiftCW
-                                &td_esc         &mt LGUI TAB  &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
+&kp Q                    &kp W  &kp E       &kp R           &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
+&ht_hl 1 A               &kp S  &ht_hl 2 D  &hm LEFT_GUI F  &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 5 K  &kp L    &ht_hl 4 APOS
+&ht_shiftz LEFT_SHIFT Z  &kp X  &kp C       &kp V           &ht_hl 3 B       &kp N        &kp M                              &td_semic   &kp DOT  &td_shiftCW
+                                &td_esc     &mt LGUI TAB    &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
             >;
 
             label = "0DFL";
@@ -632,10 +632,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA     &sk RCTRL      &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
-&kp MINUS                    &kp N4        &ht_hl 5 N5   &kp NUMBER_6  &kp PERIOD    &sk RIGHT_ALT  &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp SLASH
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9        &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shiftz RSHFT EQUAL
-                                           &trans        &trans        &trans        &mo 5          &trans                          &kp LG(BACKSPACE)
+&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &sk RCTRL      &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
+&kp MINUS                    &kp N4        &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &sk RIGHT_ALT  &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp SLASH
+&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shiftz RSHFT EQUAL
+                                           &trans        &trans             &trans        &mo 5          &trans                          &kp LG(BACKSPACE)
             >;
 
             label = "2 NAV";

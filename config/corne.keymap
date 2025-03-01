@@ -244,7 +244,7 @@
 
         cmb_navtogl {
             bindings = <&tog 2>;
-            key-positions = <11 12 13>;
+            key-positions = <12 22>;
             timeout-ms = <200>;
         };
     };

@@ -166,6 +166,7 @@
             bindings = <&mo 5>;
             key-positions = <12 13>;
             timeout-ms = <200>;
+            layers = <0 1 2>;
         };
 
         bsp_word {
@@ -199,6 +200,7 @@
         cmb_stickyshift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <2 12>;
+            layers = <0 1 2>;
         };
 
         combo_dqt {
@@ -226,6 +228,7 @@
             bindings = <&tog 2>;
             key-positions = <26 27 28>;
             timeout-ms = <200>;
+            layers = <0 2>;
         };
 
         cmb_slash {
@@ -239,13 +242,14 @@
             bindings = <&kp BACKSLASH>;
             key-positions = <18 28>;
             timeout-ms = <200>;
-            layers = <1 2>;
+            layers = <1>;
         };
 
         cmb_navtogl {
             bindings = <&tog 2>;
             key-positions = <12 22>;
             timeout-ms = <200>;
+            layers = <0 2 1>;
         };
 
         cmb_altdash {
@@ -253,6 +257,20 @@
             key-positions = <3 13>;
             timeout-ms = <200>;
             layers = <1>;
+        };
+
+        cmb_cmdarrr {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <18 28>;
+            timeout-ms = <200>;
+            layers = <2>;
+        };
+
+        cmb_cmdarrl {
+            bindings = <&kp LG(LEFT)>;
+            key-positions = <16 26>;
+            timeout-ms = <200>;
+            layers = <2>;
         };
     };
 
@@ -639,7 +657,7 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &sk RCTRL      &kp RG(LEFT_ARROW)              &bsp_word          &kp RG(RIGHT_ARROW)        &kp ESC
+&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &sk RCTRL      &none                           &bsp_word          &none                      &kp ESC
 &kp MINUS                    &kp N4        &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &sk RIGHT_ALT  &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp SLASH
 &ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shiftz RSHFT EQUAL
                                            &trans        &trans             &trans        &mo 5          &trans                          &kp LG(BACKSPACE)
@@ -663,10 +681,10 @@
         media {
             display-name = "4MED";
             bindings = <
-&kp LG(LS(NUMBER_3))  &FN_left  &FN_up                  &FN_right               &none                     &none     &kp C_RW       &kp C_VOL_UP  &kp C_FF  &none
-&none                 &none     &FN_down                &kp LS(LA(LC(LG(N5))))  &none                     &none     &kp C_BRI_INC  &kp C_VOL_DN  &none     &none
-&kp LEFT_ALT          &none     &kp LS(LA(LC(LG(N7))))  &kp LS(LA(LC(LG(N8))))  &kp LS(LA(LC(LG(N9))))    &none     &kp C_BRI_DEC  &none         &none     &none
-                                &none                   &none                   &kp LEFT_CONTROL          &kp C_PP  &trans         &trans
+&kp LG(LS(NUMBER_3))  &none  &none  &none  &none               &none     &kp C_RW       &kp C_VOL_UP  &kp C_FF  &none
+&none                 &none  &none  &none  &none               &none     &kp C_BRI_INC  &kp C_VOL_DN  &none     &none
+&kp LEFT_ALT          &none  &none  &none  &none               &none     &kp C_BRI_DEC  &none         &none     &none
+                             &none  &none  &kp LEFT_CONTROL    &kp C_PP  &trans         &trans
             >;
 
             label = "4 Md";

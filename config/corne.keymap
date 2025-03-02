@@ -469,9 +469,9 @@
             quick-tap-ms = <125>;
         };
 
-        ht_shiftz: ht_shiftz {
+        ht_shift: ht_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_SHIFTZ";
+            label = "HT_SHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -483,15 +483,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BSP_WORD";
             bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        del_word: del_word {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DEL_WORD";
-            bindings = <&kp DELETE>, <&kp LA(DELETE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -529,22 +520,6 @@
             label = "TD_SHIFTCW";
             #binding-cells = <0>;
             bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
-        };
-
-        td_colondot: td_colondot {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_COLONDOT";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-        };
-
-        colndotell: colndotell {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COLNDOTELL";
-            bindings = <&td_colondot>, <&kp LA(SEMI)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         left_arrow: left_arrow {
@@ -596,24 +571,6 @@
             bindings = <&sk>, <&kp>;
         };
 
-        hold_shift: hold_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_SHIFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-        };
-
-        td_aposquo: td_aposquo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_APOSQUO";
-            #binding-cells = <0>;
-            bindings = <&kp APOS>, <&kp DOUBLE_QUOTES>;
-
-            tapping-term-ms = <250>;
-        };
-
         mod_slash: mod_slash {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_SLASH";
@@ -621,6 +578,17 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        pht_L2shift: pht_L2shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHT_L2SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <120>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <30 31 32 5 15 25 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
         };
     };
 
@@ -633,10 +601,10 @@
         default {
             display-name = "0DFL";
             bindings = <
-&kp Q                    &kp W  &kp E       &kp R           &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
-&ht_hl 1 A               &kp S  &ht_hl 2 D  &hm LEFT_GUI F  &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 5 K  &kp L    &ht_hl 4 APOS
-&ht_shiftz LEFT_SHIFT Z  &kp X  &kp C       &kp V           &ht_hl 3 B       &kp N        &kp M                              &td_semic   &kp DOT  &td_shiftCW
-                                &td_esc     &mt LGUI TAB    &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
+&kp Q                   &kp W  &kp E       &kp R           &kp T            &kp Y        &kp U                              &kp I       &kp O    &kp P
+&ht_hl 1 A              &kp S  &ht_hl 2 D  &hm LEFT_GUI F  &kp G            &kp H        &ht_hyper LS(LA(LC(RIGHT_GUI))) J  &ht_hl 5 K  &kp L    &ht_hl 4 APOS
+&ht_shift LEFT_SHIFT Z  &kp X  &kp C       &kp V           &ht_hl 3 B       &kp N        &kp M                              &td_semic   &kp DOT  &td_shiftCW
+                               &td_esc     &mt LGUI TAB    &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
             >;
 
             label = "0DFL";
@@ -647,7 +615,7 @@
             bindings = <
 &none  &kp EXCL        &kp AT_SIGN     &kp LA(NUMBER_3)                      &none                     &kp SEMI    &kp NUMBER_1  &kp N2  &kp N3  &kp BACKSPACE
 &none  &kp LEFT_SHIFT  &ht_hl 2 GRAVE  &ht_hyper LS(LA(LC(LEFT_GUI))) TILDE  &none                     &kp COLON   &kp N4        &kp N5  &kp N6  &kp BACKSLASH
-&none  &none           &kp PIPE        &kp UNDER                             &none                     &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shiftz RIGHT_SHIFT N0
+&none  &none           &kp PIPE        &kp UNDER                             &none                     &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shift RIGHT_SHIFT N0
                        &kp LEFT_ALT    &mt LGUI LS(TAB)                      &mt LEFT_CONTROL ENTER    &trans      &none         &none
             >;
 
@@ -657,10 +625,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &sk RCTRL      &none                           &bsp_word          &none                      &kp ESC
-&kp MINUS                    &kp N4        &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &sk RIGHT_ALT  &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp SLASH
-&ht_shiftz LEFT_SHIFT EQUAL  &kp N7        &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shiftz RSHFT EQUAL
-                                           &trans        &trans             &trans        &mo 5          &trans                          &kp LG(BACKSPACE)
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &sk RCTRL      &none                           &bsp_word          &none                      &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &sk RIGHT_ALT  &kp RA(LEFT)                    &kp UP             &kp RA(RIGHT)              &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shift RSHFT EQUAL
+                                                        &trans        &trans             &trans        &mo 5          &trans                          &kp LG(BACKSPACE)
             >;
 
             label = "2 NAV";

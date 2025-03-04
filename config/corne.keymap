@@ -632,10 +632,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &sk RCTRL      &none                           &none              &none                      &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &sk RIGHT_ALT  &left_taphold RA(LEFT) 0        &kp UP             &rght_taphold RA(RIGHT) 0  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT_ARROW) 0  &kp DOWN           &rght_taphold LA(RIGHT) 0  &ht_shift RSHFT EQUAL
-                                                        &trans        &trans             &trans        &mo 5          &trans                          &kp LG(BACKSPACE)
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &sk RCTRL      &none                     &none              &none                      &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &sk RIGHT_ALT  &left_taphold RA(LEFT) 0  &kp UP             &rght_taphold RA(RIGHT) 0  &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &kp LA(LEFT_ARROW)        &kp DOWN           &kp LA(RIGHT)              &ht_shift RSHFT EQUAL
+                                                        &trans        &trans             &trans        &mo 5          &trans                    &kp LG(BACKSPACE)
             >;
 
             label = "2 NAV";

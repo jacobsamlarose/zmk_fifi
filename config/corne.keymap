@@ -132,7 +132,7 @@
 
         drafts_bullet {
             bindings = <&kp LC(B)>;
-            key-positions = <1 11>;
+            key-positions = <12 22>;
             timeout-ms = <200>;
             layers = <0>;
         };
@@ -150,7 +150,7 @@
 
         cmb_undo {
             bindings = <&kp LG(Z)>;
-            key-positions = <11 21>;
+            key-positions = <11 1>;
             layers = <0 1 2>;
             timeout-ms = <200>;
         };

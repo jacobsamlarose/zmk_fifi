@@ -633,7 +633,7 @@
             bindings = <
 &kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &none            &none                     &kp RG(BACKSPACE)  &none                      &kp ESC
 &kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &kt RIGHT_SHIFT  &left_taphold RA(LEFT) 0  &kp UP             &rght_taphold RA(RIGHT) 0  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI    &kp LA(LEFT_ARROW)        &kp DOWN           &kp LA(RIGHT)              &ht_shift RSHFT EQUAL
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI    &kp RG(LEFT_ARROW)        &kp DOWN           &kp RG(RIGHT)              &ht_shift RSHFT EQUAL
                                                         &trans        &trans             &trans        &mo 5            &trans                    &kp LG(BACKSPACE)
             >;
 

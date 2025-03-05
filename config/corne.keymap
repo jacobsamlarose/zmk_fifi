@@ -219,7 +219,7 @@
 
         cmb_navtog {
             bindings = <&tog 2>;
-            key-positions = <18 28>;
+            key-positions = <28 27 26>;
             timeout-ms = <200>;
             layers = <0 2>;
         };

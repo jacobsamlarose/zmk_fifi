@@ -246,21 +246,21 @@
         };
 
         cmb_cmdarrr {
-            bindings = <&kp LG(RIGHT)>;
+            bindings = <&kp LA(RIGHT)>;
             key-positions = <18 28>;
             timeout-ms = <200>;
             layers = <2>;
         };
 
         cmb_cmdarrl {
-            bindings = <&kp LG(LEFT)>;
+            bindings = <&kp LA(LEFT)>;
             key-positions = <16 26>;
             timeout-ms = <200>;
             layers = <2>;
         };
 
         cmb_altarr {
-            bindings = <&kp LA(RIGHT)>;
+            bindings = <&kp LG(RIGHT)>;
             key-positions = <18 8>;
             timeout-ms = <200>;
             layers = <2>;

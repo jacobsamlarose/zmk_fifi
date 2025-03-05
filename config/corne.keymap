@@ -219,7 +219,7 @@
 
         cmb_navtog {
             bindings = <&tog 2>;
-            key-positions = <26 27 28>;
+            key-positions = <16 17 18>;
             timeout-ms = <200>;
             layers = <0 2>;
         };
@@ -236,13 +236,6 @@
             key-positions = <18 8>;
             timeout-ms = <200>;
             layers = <1>;
-        };
-
-        cmb_navtogl {
-            bindings = <&tog 2>;
-            key-positions = <12 11 13>;
-            timeout-ms = <200>;
-            layers = <0 2 1>;
         };
 
         cmb_altdash {

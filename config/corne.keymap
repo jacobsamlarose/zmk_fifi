@@ -226,16 +226,9 @@
 
         cmb_slash {
             bindings = <&mod_slash>;
-            key-positions = <18 8>;
+            key-positions = <27 26>;
             timeout-ms = <200>;
             layers = <0>;
-        };
-
-        cmb_bckslsh {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <18 8>;
-            timeout-ms = <200>;
-            layers = <1>;
         };
 
         cmb_altdash {

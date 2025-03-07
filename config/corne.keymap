@@ -226,7 +226,7 @@
 
         cmb_slash {
             bindings = <&mod_slash>;
-            key-positions = <27 26>;
+            key-positions = <16 17>;
             timeout-ms = <200>;
             layers = <0>;
         };

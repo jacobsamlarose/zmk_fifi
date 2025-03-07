@@ -264,6 +264,12 @@
             key-positions = <15 5>;
             layers = <0>;
         };
+
+        cmb_shiftlock {
+            bindings = <&kt RSHIFT>;
+            key-positions = <17 27>;
+            layers = <2>;
+        };
     };
 
     behaviors {

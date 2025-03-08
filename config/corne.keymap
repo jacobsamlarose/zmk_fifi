@@ -270,6 +270,20 @@
             timeout-ms = <200>;
             layers = <2 5>;
         };
+
+        cmb_altarrl {
+            bindings = <&kp LA(LEFT)>;
+            key-positions = <16 17>;
+            layers = <2>;
+            timeout-ms = <200>;
+        };
+
+        cmb_altarrr {
+            bindings = <&kp RA(RIGHT)>;
+            key-positions = <17 18>;
+            timeout-ms = <200>;
+            layers = <2>;
+        };
     };
 
     behaviors {

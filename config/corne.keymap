@@ -289,14 +289,14 @@
             bindings = <&kp RG(LEFT)>;
             key-positions = <17 15>;
             timeout-ms = <200>;
-            layers = <2 0>;
+            layers = <0 2>;
         };
 
         cmb_arrend {
             bindings = <&kp RG(RIGHT)>;
             key-positions = <17 19>;
             timeout-ms = <200>;
-            layers = <2 0>;
+            layers = <0 2>;
         };
     };
 
@@ -444,15 +444,6 @@
             label = "MACRO_SEMICSPACE";
         };
 
-        bdel: backdelete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACK_DEL";
-            #binding-cells = <0>;
-            bindings = <&kp LA(BSPC)>, <&kp LA(DEL)>;
-
-            mods = <(MOD_LSFT | MOD_RSFT)>;
-        };
-
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -470,17 +461,6 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        ht_z: holdtap_z {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <650>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&kp>;
         };
 
         ht_hl: holdtap_homerowlayer {
@@ -514,15 +494,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        td_revcolon_ellip: td_revcolon_ellip {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_REVCOLON_ELLIP";
-            #binding-cells = <0>;
-            bindings = <&rev_colon>, <&kp LA(SEMI)>;
-
-            tapping-term-ms = <250>;
-        };
-
         td_semic: td_semic {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMIC";
@@ -530,15 +501,6 @@
             bindings = <&kp COMMA>, <&kp SEMI>;
 
             tapping-term-ms = <250>;
-        };
-
-        rev_colon: rev_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "REV_COLON";
-            bindings = <&kp COLON>, <&kp SEMI>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         td_shiftCW: td_shiftCW {

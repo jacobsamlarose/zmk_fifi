@@ -284,6 +284,20 @@
             timeout-ms = <200>;
             layers = <2>;
         };
+
+        cmb_arrstart {
+            bindings = <&kp RG(LEFT)>;
+            key-positions = <17 15>;
+            timeout-ms = <200>;
+            layers = <2 0>;
+        };
+
+        cmb_arrend {
+            bindings = <&kp RG(RIGHT)>;
+            key-positions = <17 19>;
+            timeout-ms = <200>;
+            layers = <2 0>;
+        };
     };
 
     behaviors {

@@ -516,7 +516,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp LG(LEFT_ARROW)>;
 
-            tapping-term-ms = <190>;
+            tapping-term-ms = <210>;
         };
 
         right_arr: right_arr {
@@ -525,7 +525,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp LG(RIGHT)>;
 
-            tapping-term-ms = <190>;
+            tapping-term-ms = <210>;
         };
 
         left_taphold: left_taphold {

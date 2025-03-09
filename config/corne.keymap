@@ -400,13 +400,6 @@
                 <&kp CAPS>;
         };
 
-        dotdotdot: dotdotdot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOT &kp DOT &kp DOT>;
-            label = "DOTDOTDOT";
-        };
-
         next_slideover: next_slideover {
             compatible = "zmk,behavior-macro";
             label = "NEXT_SLIDEOVER";
@@ -428,20 +421,6 @@
                 <&macro_press>,
                 <&kp CAPS &kp LC(BACKSLASH)>,
                 <&macro_release>;
-        };
-
-        macro_zz: macro_zz {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Z &kp Z>;
-            label = "MACRO_ZZ";
-        };
-
-        macro_semicspace: macro_semicspace {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SEMI &kp SPACE>;
-            label = "MACRO_SEMICSPACE";
         };
 
         hm: homerow_mods {
@@ -516,7 +495,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp LG(LEFT_ARROW)>;
 
-            tapping-term-ms = <230>;
+            tapping-term-ms = <225>;
         };
 
         right_arr: right_arr {
@@ -525,7 +504,7 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp LG(RIGHT)>;
 
-            tapping-term-ms = <230>;
+            tapping-term-ms = <225>;
         };
 
         left_taphold: left_taphold {
@@ -613,8 +592,8 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp COMMA     &bspc_del        &kp RA(LEFT_ARROW)        &kp UP             &kp RA(RIGHT)              &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp PERIOD    &kt RIGHT_SHIFT  &left_taphold RA(LEFT) 0  &kp DOWN           &rght_taphold RA(RIGHT) 0  &kp SLASH
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &bspc_del        &kp RA(LEFT_ARROW)        &kp UP             &kp RA(RIGHT)              &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &kt RIGHT_SHIFT  &left_taphold RA(LEFT) 0  &kp DOWN           &rght_taphold RA(RIGHT) 0  &kp SLASH
 &ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI    &none                     &none              &none                      &ht_shift RSHFT EQUAL
                                                         &trans        &trans             &trans        &mo 5            &trans                    &kp LG(BACKSPACE)
             >;

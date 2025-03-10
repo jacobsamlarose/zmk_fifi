@@ -298,6 +298,13 @@
             timeout-ms = <200>;
             layers = <0 2>;
         };
+
+        cmb_apos {
+            bindings = <&kp APOS>;
+            key-positions = <17 18>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
     };
 
     behaviors {

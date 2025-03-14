@@ -260,13 +260,13 @@
 
         cmb_shiftlock {
             bindings = <&kt RSHIFT>;
-            key-positions = <17 7>;
+            key-positions = <17 27>;
             layers = <2>;
         };
 
         cmb_moveline {
             bindings = <&tog 5>;
-            key-positions = <27 17>;
+            key-positions = <17 7>;
             timeout-ms = <200>;
             layers = <2 5>;
         };

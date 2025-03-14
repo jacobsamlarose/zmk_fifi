@@ -84,7 +84,7 @@
 
         combo_lbrc {
             timeout-ms = <100>;
-            key-positions = <23 24>;
+            key-positions = <23 24 35>;
             bindings = <&kp LBRC>;
             layers = <0 1 2>;
         };
@@ -494,6 +494,8 @@
             label = "TD_SHIFTCW";
             #binding-cells = <0>;
             bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
+
+            tapping-term-ms = <250>;
         };
 
         left_arrow: left_arrow {

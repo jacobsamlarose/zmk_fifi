@@ -286,14 +286,14 @@
         };
 
         cmb_arrstart {
-            bindings = <&kp RG(LEFT)>;
+            bindings = <&ht_shift RG(RS(LEFT)) RG(LEFT)>;
             key-positions = <17 15>;
             timeout-ms = <200>;
             layers = <0 2>;
         };
 
         cmb_arrend {
-            bindings = <&kp RG(RIGHT)>;
+            bindings = <&ht_shift RG(RS(RIGHT)) RG(RIGHT)>;
             key-positions = <17 19>;
             timeout-ms = <200>;
             layers = <0 2>;

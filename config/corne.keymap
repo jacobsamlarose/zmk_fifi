@@ -260,7 +260,7 @@
         };
 
         cmb_shiftlock {
-            bindings = <&kt RSHIFT>;
+            bindings = <&hold_shift>;
             key-positions = <17 27>;
             layers = <2>;
         };

@@ -309,6 +309,12 @@
     };
 
     behaviors {
+        hold_shift: hold_shift {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp RSHIFT>, <&none>;
+        };
+
         td_esc: tap_dance_esc {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ESC";

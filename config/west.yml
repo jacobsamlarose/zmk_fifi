@@ -16,20 +16,11 @@ manifest:
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
-
-    # ZMK modules
-    - name: zmk-adaptive-key
-      remote: urob
-      revision: main
     - name: zmk-smart-toggle
       remote: caksoylar
       revision: main
-    - name: zmk-auto-layer
-      remote: urob
-      revision: main
     - name: zmk-leader-key
       remote: urob
-      revision: main
-      
+      revision: main      
   self:
     path: config

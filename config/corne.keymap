@@ -313,6 +313,7 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp RSHIFT>, <&none>;
+            ignored-key-positions = <16 17 18 27>;
         };
 
         td_esc: tap_dance_esc {

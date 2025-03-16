@@ -314,7 +314,7 @@
             #binding-cells = <0>;
             bindings = <&kp RSHIFT>, <&none>;
 
-            ignored-key-positions = <16 17 18 27>;
+            ignored-key-positions = <16 17 18 26 27 28>;
         };
 
         smart_moveline: smart_moveline {

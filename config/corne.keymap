@@ -228,7 +228,7 @@
         cmb_slash {
             bindings = <&mod_slash>;
             key-positions = <16 17>;
-            timeout-ms = <200>;
+            timeout-ms = <150>;
             layers = <0>;
         };
 
@@ -289,21 +289,21 @@
         cmb_arrstart {
             bindings = <&ArrowSelect RG(RS(LEFT)) RG(LEFT)>;
             key-positions = <27 26>;
-            timeout-ms = <200>;
+            timeout-ms = <150>;
             layers = <0 2>;
         };
 
         cmb_arrend {
             bindings = <&ArrowSelect RG(RS(RIGHT)) RG(RIGHT)>;
             key-positions = <27 28>;
-            timeout-ms = <200>;
+            timeout-ms = <150>;
             layers = <0 2>;
         };
 
         cmb_apos {
             bindings = <&kp APOS>;
             key-positions = <17 18>;
-            timeout-ms = <200>;
+            timeout-ms = <150>;
             layers = <0>;
         };
     };
@@ -313,6 +313,7 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp RSHIFT>, <&none>;
+
             ignored-key-positions = <16 17 18 27>;
         };
 

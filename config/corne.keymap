@@ -274,14 +274,14 @@
 
         cmb_altarrl {
             bindings = <&kp LA(LEFT)>;
-            key-positions = <16 17>;
+            key-positions = <16 26>;
             layers = <2>;
             timeout-ms = <200>;
         };
 
         cmb_altarrr {
             bindings = <&kp RA(RIGHT)>;
-            key-positions = <17 18>;
+            key-positions = <18 28>;
             timeout-ms = <200>;
             layers = <2>;
         };

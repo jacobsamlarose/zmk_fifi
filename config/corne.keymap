@@ -320,7 +320,7 @@
         smart_moveline: smart_moveline {
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&none>;
+            bindings = <&kp RG(RALT)>, <&none>;
 
             ignored-key-positions = <7 17 27>;
         };

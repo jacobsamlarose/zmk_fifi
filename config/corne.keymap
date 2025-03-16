@@ -266,7 +266,7 @@
         };
 
         cmb_moveline {
-            bindings = <&tog 5>;
+            bindings = <&smart_moveline>;
             key-positions = <17 7>;
             timeout-ms = <200>;
             layers = <2 5>;

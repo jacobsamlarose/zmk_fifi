@@ -609,7 +609,7 @@
 &ht_shift LSHIFT Z  &kp X  &kp C       &kp V           &ht_hl 3 B       &kp N        &kp M                              &td_semic   &kp DOT  &td_shiftCW
                            &td_esc     &mt LGUI TAB    &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
             >;
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             label = "0DFL";
         };
 

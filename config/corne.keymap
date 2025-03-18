@@ -633,7 +633,7 @@
 &ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI    &none                     &kp DOWN     &none                      &ht_shift RSHFT EQUAL
                                                         &trans        &trans             &trans        &mo 5            &trans                    &hold_shift
             >;
-            sensor-bindings = <&inc_dec_kp LG(RIGHT) LG(LEFT)>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
             label = "2 NAV";
         };
 

@@ -609,7 +609,7 @@
 &ht_shift LSHIFT Z  &kp X  &kp C       &kp V           &ht_hl 3 B       &kp N        &kp M                              &td_semic   &kp DOT  &td_shiftCW
                            &td_esc     &mt LGUI TAB    &mt LCTRL RET    &lt 2 SPACE  &none                              &kp CAPS
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
             label = "0DFL";
         };
 
@@ -621,7 +621,7 @@
 &none  &none           &kp PIPE        &kp UNDER                             &none                     &kp PERIOD  &kp N7        &kp N8  &kp N9  &ht_shift RIGHT_SHIFT N0
                        &kp LEFT_ALT    &mt LGUI LS(TAB)                      &mt LEFT_CONTROL ENTER    &trans      &none         &none
             >;
-
+            sensor-bindings = <&inc_dec_kp LG(Z) LG(LS(Z))>;
             label = "1 SYN";
         };
 
@@ -669,7 +669,7 @@
 &none             &FN_left        &FN_down       &FN_right       &none        &macro_switch       &kp LG(LEFT_BRACKET)  &kp RG(RA(DOWN))  &kp RG(RBKT)  &kp RIGHT_SHIFT
                                   &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL    &kp C_EJECT         &trans                &trans
             >;
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             label = "5 OS";
         };
 

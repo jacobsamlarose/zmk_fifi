@@ -536,7 +536,7 @@
         left_taphold: left_taphold {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_TAPHOLD";
-            bindings = <&kp>, <&left_arrow>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
@@ -546,7 +546,7 @@
         rght_taphold: rght_taphold {
             compatible = "zmk,behavior-hold-tap";
             label = "RGHT_TAPHOLD";
-            bindings = <&kp>, <&right_arr>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
@@ -630,10 +630,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &bspc_del        &none                     &none        &none                      &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &kt RIGHT_SHIFT  &left_taphold RA(LEFT) 0  &kp UP       &rght_taphold RA(RIGHT) 0  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI    &none                     &kp DOWN     &none                      &ht_shift RSHFT EQUAL
-                                                        &trans        &trans             &trans        &mo 5            &trans                    &hold_shift
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &bspc_del      &none                        &none        &none                          &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &none          &left_taphold RA(LEFT) LEFT  &kp UP       &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT) LEFT  &kp DOWN     &rght_taphold RA(RIGHT) RIGHT  &ht_shift RSHFT EQUAL
+                                                        &trans        &trans             &trans        &mo 5          &trans                       &hold_shift
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;

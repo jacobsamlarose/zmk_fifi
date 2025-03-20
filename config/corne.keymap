@@ -272,39 +272,18 @@
             layers = <2 5>;
         };
 
-        cmb_altarrl {
-            bindings = <&kp LA(LEFT)>;
-            key-positions = <16 26>;
-            layers = <2>;
-            timeout-ms = <200>;
-        };
-
-        cmb_altarrr {
-            bindings = <&kp RA(RIGHT)>;
-            key-positions = <18 28>;
-            timeout-ms = <200>;
-            layers = <2>;
-        };
-
         cmb_arrstart {
             bindings = <&ArrowSelect RG(RS(LEFT)) RG(LEFT)>;
-            key-positions = <16 17>;
+            key-positions = <27 26>;
             timeout-ms = <150>;
             layers = <0 2>;
         };
 
         cmb_arrend {
             bindings = <&ArrowSelect RG(RS(RIGHT)) RG(RIGHT)>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             timeout-ms = <150>;
             layers = <0 2>;
-        };
-
-        cmb_apos {
-            bindings = <&kp APOS>;
-            key-positions = <18 8>;
-            timeout-ms = <150>;
-            layers = <0>;
         };
     };
 

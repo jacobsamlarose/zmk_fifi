@@ -285,6 +285,18 @@
             timeout-ms = <150>;
             layers = <0 2>;
         };
+
+        cmb_arrwordleft {
+            bindings = <&kp LA(LEFT)>;
+            key-positions = <16 26>;
+            layers = <2>;
+        };
+
+        cmb_arrwordright {
+            bindings = <&kp LA(RIGHT)>;
+            key-positions = <18 28>;
+            layers = <2>;
+        };
     };
 
     behaviors {

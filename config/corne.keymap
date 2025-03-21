@@ -269,7 +269,7 @@
             bindings = <&smart_moveline>;
             key-positions = <17 7>;
             timeout-ms = <200>;
-            layers = <2 5>;
+            layers = <2>;
         };
 
         cmb_arrstart {
@@ -296,6 +296,20 @@
             bindings = <&kp LA(RIGHT)>;
             key-positions = <18 28>;
             layers = <2>;
+        };
+
+        cmb_zmin {
+            bindings = <&kp C_AC_ZOOM_IN>;
+            key-positions = <17 7>;
+            timeout-ms = <200>;
+            layers = <5>;
+        };
+
+        cmb_zout {
+            bindings = <&kp C_AC_ZOOM_OUT>;
+            key-positions = <27 17>;
+            timeout-ms = <200>;
+            layers = <5>;
         };
     };
 

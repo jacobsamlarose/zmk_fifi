@@ -239,20 +239,6 @@
             layers = <1>;
         };
 
-        cmb_cmdarrr {
-            bindings = <&kp RG(RIGHT)>;
-            key-positions = <18 8>;
-            timeout-ms = <200>;
-            layers = <2>;
-        };
-
-        cmb_cmdarrl {
-            bindings = <&kp RG(LEFT)>;
-            key-positions = <16 6>;
-            timeout-ms = <200>;
-            layers = <2>;
-        };
-
         cmb_bspLine {
             bindings = <&kp RG(BACKSPACE)>;
             key-positions = <15 5>;
@@ -274,14 +260,14 @@
 
         cmb_arrstart {
             bindings = <&ArrowSelect RG(RS(LEFT)) RG(LEFT)>;
-            key-positions = <27 26>;
+            key-positions = <16 17>;
             timeout-ms = <150>;
             layers = <0 2>;
         };
 
         cmb_arrend {
             bindings = <&ArrowSelect RG(RS(RIGHT)) RG(RIGHT)>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
             timeout-ms = <150>;
             layers = <0 2>;
         };

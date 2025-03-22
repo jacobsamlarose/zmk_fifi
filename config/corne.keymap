@@ -299,14 +299,14 @@
         };
 
         cmb_zmin {
-            bindings = <&kp C_AC_ZOOM_IN>;
+            bindings = <&kp K_SCROLL_UP>;
             key-positions = <17 7>;
             timeout-ms = <200>;
             layers = <5>;
         };
 
         cmb_zout {
-            bindings = <&kp C_AC_ZOOM_OUT>;
+            bindings = <&kp K_SCROLL_DOWN>;
             key-positions = <27 17>;
             timeout-ms = <200>;
             layers = <5>;

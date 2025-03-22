@@ -285,14 +285,14 @@
         };
 
         cmb_zmin {
-            bindings = <&kp K_SCROLL_UP>;
+            bindings = <&kp C_AC_SCROLL_UP>;
             key-positions = <17 7>;
             timeout-ms = <200>;
             layers = <5>;
         };
 
         cmb_zout {
-            bindings = <&kp K_SCROLL_DOWN>;
+            bindings = <&kp C_AC_SCROLL_DOWN>;
             key-positions = <27 17>;
             timeout-ms = <200>;
             layers = <5>;

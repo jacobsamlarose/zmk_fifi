@@ -274,14 +274,14 @@
 
         cmb_arrwordleft {
             bindings = <&kp LA(LEFT)>;
-            key-positions = <16 26>;
-            layers = <2>;
+            key-positions = <26 27>;
+            layers = <2 0>;
         };
 
         cmb_arrwordright {
             bindings = <&kp LA(RIGHT)>;
-            key-positions = <18 28>;
-            layers = <2>;
+            key-positions = <28 27>;
+            layers = <2 0>;
         };
 
         cmb_zmin {

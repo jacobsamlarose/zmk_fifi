@@ -649,6 +649,7 @@
                               &ext_power EP_ON  &ext_power EP_OFF  &none            &trans   &trans   &trans
             >;
 
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
             label = "3 BT";
         };
 
@@ -661,6 +662,7 @@
                              &none  &none  &kp LEFT_CONTROL    &kp C_PP  &trans         &trans
             >;
 
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             label = "4 Md";
         };
 
@@ -673,7 +675,7 @@
                                   &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL    &kp C_EJECT         &trans                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
             label = "5 OS";
         };
 

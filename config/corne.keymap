@@ -85,7 +85,7 @@
 
         combo_lbrc {
             timeout-ms = <100>;
-            key-positions = <23 24 35>;
+            key-positions = <23 24>;
             bindings = <&kp LBRC>;
             layers = <0 1 2>;
         };
@@ -167,7 +167,7 @@
             bindings = <&bsp_word>;
             key-positions = <6 16>;
             timeout-ms = <200>;
-            layers = <0>;
+            layers = <2>;
         };
 
         cmb_colon {
@@ -186,7 +186,7 @@
 
         bsp_del {
             bindings = <&bspc_del>;
-            key-positions = <7 17>;
+            key-positions = <6 16>;
             timeout-ms = <200>;
             layers = <0>;
         };
@@ -261,41 +261,31 @@
         cmb_arrstart {
             bindings = <&ArrowSelect RG(RS(LEFT)) RG(LEFT)>;
             key-positions = <16 17>;
-            timeout-ms = <150>;
+            timeout-ms = <125>;
             layers = <0 2>;
+            require-prior-idle-ms = <225>;
         };
 
         cmb_arrend {
             bindings = <&ArrowSelect RG(RS(RIGHT)) RG(RIGHT)>;
             key-positions = <17 18>;
-            timeout-ms = <150>;
+            timeout-ms = <125>;
             layers = <0 2>;
+            require-prior-idle-ms = <225>;
         };
 
         cmb_arrwordleft {
             bindings = <&kp LA(LEFT)>;
             key-positions = <26 27>;
             layers = <2 0>;
+            require-prior-idle-ms = <225>;
         };
 
         cmb_arrwordright {
             bindings = <&kp LA(RIGHT)>;
             key-positions = <28 27>;
             layers = <2 0>;
-        };
-
-        cmb_zmin {
-            bindings = <&kp C_AC_SCROLL_UP>;
-            key-positions = <17 7>;
-            timeout-ms = <200>;
-            layers = <5>;
-        };
-
-        cmb_zout {
-            bindings = <&kp C_AC_SCROLL_DOWN>;
-            key-positions = <27 17>;
-            timeout-ms = <200>;
-            layers = <5>;
+            require-prior-idle-ms = <225>;
         };
     };
 

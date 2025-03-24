@@ -165,9 +165,9 @@
 
         bsp_word {
             bindings = <&bsp_word>;
-            key-positions = <6 16>;
+            key-positions = <7 17>;
             timeout-ms = <200>;
-            layers = <2>;
+            layers = <0>;
         };
 
         cmb_colon {
@@ -262,7 +262,7 @@
             bindings = <&ArrowSelect RG(RS(LEFT)) RG(LEFT)>;
             key-positions = <16 17>;
             timeout-ms = <125>;
-            layers = <0 2>;
+            layers = <0>;
             require-prior-idle-ms = <225>;
         };
 
@@ -270,21 +270,21 @@
             bindings = <&ArrowSelect RG(RS(RIGHT)) RG(RIGHT)>;
             key-positions = <17 18>;
             timeout-ms = <125>;
-            layers = <0 2>;
+            layers = <0>;
             require-prior-idle-ms = <225>;
         };
 
         cmb_arrwordleft {
             bindings = <&kp LA(LEFT)>;
-            key-positions = <26 27>;
-            layers = <2 0>;
+            key-positions = <16 17>;
+            layers = <2>;
             require-prior-idle-ms = <225>;
         };
 
         cmb_arrwordright {
             bindings = <&kp LA(RIGHT)>;
-            key-positions = <28 27>;
-            layers = <2 0>;
+            key-positions = <17 18>;
+            layers = <2>;
             require-prior-idle-ms = <225>;
         };
     };

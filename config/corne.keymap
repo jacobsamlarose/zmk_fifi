@@ -270,7 +270,7 @@
             bindings = <&ArrowSelect RG(RS(RIGHT)) RG(RIGHT)>;
             key-positions = <17 18>;
             timeout-ms = <125>;
-            layers = <0>;
+            layers = <0 2>;
             require-prior-idle-ms = <225>;
         };
 

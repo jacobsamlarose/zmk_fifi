@@ -146,7 +146,7 @@
         cmb_switch {
             bindings = <&macro_switch>;
             key-positions = <15 25>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         cmb_undo {
@@ -286,6 +286,12 @@
             key-positions = <18 28>;
             layers = <2>;
             require-prior-idle-ms = <225>;
+        };
+
+        cmb_slideo {
+            bindings = <&macro_slideover>;
+            key-positions = <15 25>;
+            layers = <2>;
         };
     };
 
@@ -620,10 +626,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &bspc_del      &none                        &none        &none                          &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &none          &left_taphold RA(LEFT) LEFT  &kp UP       &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &sk RIGHT_GUI  &left_taphold LA(LEFT) LEFT  &kp DOWN     &rght_taphold RA(RIGHT) RIGHT  &ht_shift RSHFT EQUAL
-                                                        &trans        &trans             &trans        &mo 5          &trans                       &hold_shift
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &next_slideover   &macro_displaylocn           &none        &none                          &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &macro_slideover  &left_taphold RA(LEFT) LEFT  &kp UP       &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &macro_switch     &left_taphold LA(LEFT) LEFT  &kp DOWN     &rght_taphold RA(RIGHT) RIGHT  &ht_shift RSHFT EQUAL
+                                                        &trans        &trans             &trans        &mo 5             &trans                       &hold_shift
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;
@@ -659,10 +665,10 @@
         OS_app {
             display-name = "5OS";
             bindings = <
-&macro_slideover  &macro_windows  &macro_switch  &macro_windows  &none        &macro_displaylocn  &none                 &none             &none         &none
-&next_slideover   &FN_left        &FN_up         &FN_right       &none        &macro_windows      &kp LG(N1)            &kp LG(LA(UP))    &kp LG(N0)    &none
-&none             &FN_left        &FN_down       &FN_right       &none        &macro_switch       &kp LG(LEFT_BRACKET)  &kp RG(RA(DOWN))  &kp RG(RBKT)  &kp RIGHT_SHIFT
-                                  &kp LEFT_ALT   &kp LEFT_GUI    &kp LCTRL    &kp C_EJECT         &trans                &trans
+&none  &none     &none         &none         &none        &macro_displaylocn  &none                 &none             &none         &none
+&none  &FN_left  &FN_up        &FN_right     &none        &none               &kp LG(N1)            &kp LG(LA(UP))    &kp LG(N0)    &none
+&none  &FN_left  &FN_down      &FN_right     &none        &none               &kp LG(LEFT_BRACKET)  &kp RG(RA(DOWN))  &kp RG(RBKT)  &kp RIGHT_SHIFT
+                 &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL    &kp C_EJECT         &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;

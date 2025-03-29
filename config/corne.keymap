@@ -188,7 +188,7 @@
             bindings = <&bspc_del>;
             key-positions = <7 17>;
             timeout-ms = <200>;
-            layers = <0 2>;
+            layers = <0>;
         };
 
         cmb_stickyshift {
@@ -626,9 +626,9 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &next_slideover   &macro_displaylocn           &none        &none                          &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &macro_slideover  &left_taphold RA(LEFT) LEFT  &kp UP       &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &macro_switch     &left_taphold LA(LEFT) LEFT  &kp DOWN     &rght_taphold RA(RIGHT) RIGHT  &ht_shift RSHFT EQUAL
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &next_slideover   &macro_displaylocn           &smart_moveline  &none                          &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &macro_slideover  &left_taphold RA(LEFT) LEFT  &kp UP           &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &macro_switch     &left_taphold LA(LEFT) LEFT  &kp DOWN         &rght_taphold RA(RIGHT) RIGHT  &ht_shift RSHFT EQUAL
                                                         &trans        &trans             &trans        &mo 5             &trans                       &hold_shift
             >;
 

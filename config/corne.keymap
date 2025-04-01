@@ -275,14 +275,14 @@
         };
 
         cmb_arrwordleft {
-            bindings = <&kp LA(LEFT)>;
+            bindings = <&ArrowSelect RG(LEFT) RA(LEFT)>;
             key-positions = <16 17>;
             layers = <2 0>;
             require-prior-idle-ms = <225>;
         };
 
         cmb_arrwordright {
-            bindings = <&kp LA(RIGHT)>;
+            bindings = <&ArrowSelect RG(RIGHT) RA(RIGHT)>;
             key-positions = <18 17>;
             layers = <2 0>;
             require-prior-idle-ms = <225>;

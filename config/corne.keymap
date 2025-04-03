@@ -258,44 +258,30 @@
             layers = <2>;
         };
 
-        cmb_arrstart {
-            bindings = <&ArrowSelect RG(RS(LEFT)) RG(LEFT)>;
-            key-positions = <17 16 18>;
-            timeout-ms = <125>;
-            layers = <0 2>;
-            require-prior-idle-ms = <225>;
-        };
-
-        cmb_arrend {
-            bindings = <&ArrowSelect RG(RS(RIGHT)) RG(RIGHT)>;
-            key-positions = <17 18 19>;
-            timeout-ms = <125>;
-            layers = <0 2>;
-            require-prior-idle-ms = <225>;
-        };
-
         cmb_arrwordleft {
-            bindings = <&ArrowSelect RG(LEFT) RA(LEFT)>;
-            key-positions = <16 17>;
-            layers = <2 0>;
+            bindings = <&ArrowSelect RS(RA(LEFT)) RA(LEFT)>;
+            key-positions = <16 26>;
+            layers = <2>;
             require-prior-idle-ms = <225>;
         };
 
         cmb_arrwordright {
-            bindings = <&ArrowSelect RG(RIGHT) RA(RIGHT)>;
-            key-positions = <18 17>;
-            layers = <2 0>;
+            bindings = <&ArrowSelect RA(RS(RIGHT)) RA(RIGHT)>;
+            key-positions = <18 28>;
+            layers = <2>;
             require-prior-idle-ms = <225>;
         };
 
         cmb_ltphold {
-            bindings = <&left_taphold RS(LEFT_ARROW) LEFT>;
-            key-positions = <27 26>;
+            bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
+            key-positions = <17 16>;
+            layers = <0 2>;
         };
 
         cmb_rtphold {
-            bindings = <&left_taphold RS(RIGHT) RIGHT>;
-            key-positions = <27 28>;
+            bindings = <&left_taphold RS(RG(RIGHT)) RG(RIGHT)>;
+            key-positions = <17 18>;
+            layers = <0 2>;
         };
     };
 

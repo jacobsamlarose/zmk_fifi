@@ -279,8 +279,20 @@
         };
 
         cmb_rtphold {
-            bindings = <&left_taphold RS(RG(RIGHT)) RG(RIGHT)>;
+            bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
             key-positions = <17 18>;
+            layers = <0 2>;
+        };
+
+        ldup {
+            bindings = <&left_taphold RS(RG(LEFT_ARROW)) RG(LEFT)>;
+            key-positions = <26 27>;
+            layers = <0 2>;
+        };
+
+        rdup {
+            bindings = <&rght_taphold RS(RG(RIGHT)) RG(RIGHT)>;
+            key-positions = <28 27>;
             layers = <0 2>;
         };
     };

@@ -143,10 +143,10 @@
             key-positions = <1 2 3>;
         };
 
-        cmb_switch {
-            bindings = <&macro_switch>;
+        cmb_slideover {
+            bindings = <&macro_slideover>;
             key-positions = <15 25>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         cmb_undo {
@@ -628,10 +628,10 @@
         num_nav {
             display-name = "2NAV";
             bindings = <
-&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &next_slideover   &macro_displaylocn           &smart_moveline  &none                          &kp ESC
-&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &macro_slideover  &left_taphold RA(LEFT) LEFT  &kp UP           &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
-&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &macro_switch     &left_taphold LA(LEFT) LEFT  &kp DOWN         &rght_taphold RA(RIGHT) RIGHT  &ht_shift RSHFT EQUAL
-                                                        &trans        &trans             &trans        &mo 5             &trans                       &hold_shift
+&kp PLUS                    &kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3       &kp PERIOD    &none            &macro_displaylocn           &smart_moveline  &none                          &kp ESC
+&kp MINUS                   &pht_L2shift LEFT_SHIFT N4  &kp N5        &ht_hl 5 NUMBER_6  &kp COLON     &next_slideover  &left_taphold RA(LEFT) LEFT  &kp UP           &rght_taphold RA(RIGHT) RIGHT  &kp SLASH
+&ht_shift LEFT_SHIFT EQUAL  &kp N7                      &kp N8        &kp N9             &kp N0        &macro_switch    &left_taphold LA(LEFT) LEFT  &kp DOWN         &rght_taphold RA(RIGHT) RIGHT  &ht_shift RSHFT EQUAL
+                                                        &trans        &trans             &trans        &mo 5            &trans                       &hold_shift
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN>;

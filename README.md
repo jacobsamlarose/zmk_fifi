@@ -1,3 +1,3 @@
 # Keymap 
 
-![Screenshot](my_keymap%210.png)
+![Screenshot](my_keymap%2010.png)
